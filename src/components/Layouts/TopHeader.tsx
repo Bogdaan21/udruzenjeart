@@ -1,5 +1,5 @@
 "use client";
-  
+
 import React from "react";
 
 const TopHeader: React.FC = () => {
@@ -19,14 +19,14 @@ const TopHeader: React.FC = () => {
                       </a>
                     </li>
                     <li>
-                      <a href="mailto:hello@disin.com">
+                      <a href="mailto:info@udruzenjeart.me">
                         <i className="icofont-ui-message"></i>
-                        hello@disin.com
+                        info@udruzenjeart.me
                       </a>
                     </li>
                     <li>
                       <i className="icofont-location-pin"></i>
-                      210-27 Quadra, Canada
+                      Podgorica
                     </li>
                   </ul>
                 </div>

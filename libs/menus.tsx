@@ -1,34 +1,26 @@
-export const menus = [
-  {
-    label: "Home",
-    link: "/",
-  },
-  {
-    label: "About",
-    link: "/about/",
-  },
-  {
-    label: "Appointment",
-    link: "/appointment/",
-  },
-  // {
-  //   label: "Blog",
-  //   link: "#",
-  //   submenu: [
-  //     {
-  //       label: "Blog",
-  //       link: "/blog/",
-  //     },
-  //     {
-  //       label: "Blog Details",
-  //       link: "/blog/details/",
-  //     },
-  //   ],
-  // },
-  {
-    label: "Contact",
-    link: "/contact/",
-  },
-];
+import { useLanguage } from "@/context/LanguageContext";
 
+export const useMenus = () => {
+  const { language } = useLanguage();
 
+  const menus = [
+    {
+      label: language === "en" ? "Home" : "Početna",
+      link: "/",
+    },
+    {
+      label: language === "en" ? "About" : "O nama",
+      link: "/about/",
+    },
+    {
+      label: language === "en" ? "Appointment" : "Prijava",
+      link: "/appointment/",
+    },
+    {
+      label: language === "en" ? "Contact" : "Kontakt",
+      link: "/contact/",
+    },
+  ];
+
+  return menus;
+};

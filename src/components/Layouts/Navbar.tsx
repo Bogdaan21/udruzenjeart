@@ -3,12 +3,14 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import MenuItem from "./MenuItem";
-import { menus } from "../../../libs/menus";
+import { useMenus } from "../../../libs/menus";
 import Image from "next/image";
 import LanguageSelector from "../Lang/Language";
 
 const Navbar: React.FC = () => {
   const [menu, setMenu] = useState(true);
+  const menus = useMenus();
+
   const toggleNavbar = () => {
     setMenu(!menu);
   };
@@ -24,12 +26,8 @@ const Navbar: React.FC = () => {
     });
   });
 
-  const classOne = menu
-    ? "collapse navbar-collapse mean-menu"
-    : "collapse navbar-collapse show";
-  const classTwo = menu
-    ? "navbar-toggler navbar-toggler-right collapsed"
-    : "navbar-toggler navbar-toggler-right";
+  const classOne = menu ? "collapse navbar-collapse mean-menu" : "collapse navbar-collapse show";
+  const classTwo = menu ? "navbar-toggler navbar-toggler-right collapsed" : "navbar-toggler navbar-toggler-right";
 
   return (
     <>
@@ -38,12 +36,7 @@ const Navbar: React.FC = () => {
           <div className="container">
             <nav className="navbar navbar-expand-md navbar-light">
               <Link href="/" className="navbar-brand">
-                <Image
-                  src="/images/logo.png"
-                  alt="logo"
-                  width={120}
-                  height={32}
-                />
+                <Image src="/images/logo-1.png" alt="logo" width={250} height={32} />
               </Link>
 
               <button
@@ -69,9 +62,7 @@ const Navbar: React.FC = () => {
                 </ul>
               </div>
 
-
-                  <LanguageSelector/>
-
+              <LanguageSelector />
             </nav>
           </div>
         </div>

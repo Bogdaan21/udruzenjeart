@@ -13,7 +13,7 @@ const ContactInfo: React.FC = () => {
                 <i className="icofont-location-pin"></i>
                 <h3>Location</h3>
                 <p>
-                  2108-267 Road Quadra, Toronto, <br /> Victiria Canada
+                  2108-267 Road Quadra, Toronto, <br /> Podgorica, Crna Gora
                 </p>
               </div>
             </div>
@@ -22,8 +22,8 @@ const ContactInfo: React.FC = () => {
               <div className="location-item">
                 <i className="icofont-ui-message"></i>
                 <h3>Email</h3>
-                <p>hello@disin.com</p>
-                <p>emailexample@name.com</p>
+                <p>info@udruzenjeart.me</p>
+                <p>udruzenje.art.mne@gmail.com</p>
               </div>
             </div>
 

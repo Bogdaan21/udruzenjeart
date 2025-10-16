@@ -15,6 +15,8 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import GoTop from "@/components/Layouts/GoTop";
 
+import { LanguageProvider } from "@/context/LanguageContext";
+
 const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   subsets: ["latin"],
@@ -22,8 +24,15 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Disin - React Nextjs Medical Health & Doctors Template",
-  description: "React Nextjs Medical Health & Doctors Template",
+  title: "Udruženje arh Crne Gore",
+  description:
+    "Zvanični sajt Udruženja anestezičara, tehničara intenzivne njege i transfuzije Crne Gore.",
+icons: {
+  icon: "/favicon_io/favicon.ico",
+  shortcut: "/favicon_io/favicon-32x32.png",
+  apple: "/favicon_io/apple-touch-icon.png",
+},
+manifest: "/favicon_io/site.webmanifest",
 };
 
 export default function RootLayout({
@@ -34,8 +43,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={poppins.className}>
-        {children}
-
+        <LanguageProvider>{children}</LanguageProvider>
         <GoTop />
       </body>
     </html>

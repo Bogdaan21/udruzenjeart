@@ -21,8 +21,8 @@ const Footer: React.FC = () => {
                   <ul>
                     <li>
                       <i className="icofont-ui-message"></i>
-                      <a href="mailto:info@disin.com">info@disin.com</a>
-                      <a href="mailto:hello@disin.com">hello@disin.com</a>
+                      <a href="mailto:info@udruzenjeart.me">info@udruzenjeart.me</a>
+                      <a href="mailto:udruzenje.art.mne@gmail.com">udruzenje.art.mne@gmail.com</a>
                     </li>
                     <li>
                       <i className="icofont-stock-mobile"></i>
@@ -31,7 +31,7 @@ const Footer: React.FC = () => {
                     </li>
                     <li>
                       <i className="icofont-location-pin"></i>
-                      210-27 Quadra, Market Street, Victoria Canada
+                      Podgorica, Crna Gora
                     </li>
                   </ul>
                 </div>
@@ -107,10 +107,11 @@ const Footer: React.FC = () => {
         <div className="container">
           <div className="copyright-item">
             <p>
-              Copyright &copy; {currentYear} Design & Developed by{" "}
-              <a href="https://hibootstrap.com/" target="_blank">
-                HiBootstrap
+               {currentYear}{" "}&copy; {" "}
+              <a href="https://botech.me/" target="_blank">
+                botech IT Solutions
               </a>
+              <span>, v0.1.0</span>
             </p>
           </div>
         </div>

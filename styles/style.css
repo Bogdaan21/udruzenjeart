@@ -219,8 +219,8 @@ button:focus {
   position: relative;
 }
 .main-nav nav {
-  padding-top: 15px;
-  padding-bottom: 15px;
+  /* padding-top: 15px;
+  padding-bottom: 15px; */
   padding-right: 0;
   padding-left: 0;
   transition: 0.5s all ease;
@@ -3445,6 +3445,7 @@ footer {
 }
 .slider-item-two:before {
   background-color: #000111;
+  /* background-color: #0843aa; */
 }
 .slider-item-two .slider-shape img {
   top: -75px;
@@ -3858,3 +3859,13 @@ footer {
 .faq-content .accordion .accordion__panel p {
   color: #344c5d;
 }/*# sourceMappingURL=style.css.map */
+
+.appointment-area-two {
+  background: whitesmoke;
+}
+
+.language-dropdown {
+  width: 220px;
+  display: flex;
+  justify-content: right;
+}
