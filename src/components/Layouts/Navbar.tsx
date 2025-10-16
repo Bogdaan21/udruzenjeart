@@ -5,6 +5,7 @@ import Link from "next/link";
 import MenuItem from "./MenuItem";
 import { menus } from "../../../libs/menus";
 import Image from "next/image";
+import LanguageSelector from "../Lang/Language";
 
 const Navbar: React.FC = () => {
   const [menu, setMenu] = useState(true);
@@ -68,20 +69,9 @@ const Navbar: React.FC = () => {
                 </ul>
               </div>
 
-              <div className="nav-srh">
-                <form>
-                  <input
-                    type="text"
-                    className="form-control"
-                    id="search"
-                    placeholder="Search..."
-                  />
 
-                  <button className="search-icon icon-search">
-                    <i className="icofont-search-1"></i>
-                  </button>
-                </form>
-              </div>
+                  <LanguageSelector/>
+
             </nav>
           </div>
         </div>
