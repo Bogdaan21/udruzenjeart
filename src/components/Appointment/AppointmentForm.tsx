@@ -1,36 +1,81 @@
 "use client";
 
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import Image from "next/image";
 import emailjs from "@emailjs/browser";
 import { useLanguage } from "@/context/LanguageContext";
+import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
+import { storage } from "@/firebase/firebaseConfig";
+import { db } from "@/firebase/firebaseConfig";
+import { collection, addDoc, Timestamp } from "firebase/firestore";
 
 const AppointmentForm: React.FC = () => {
   const formRef = useRef<HTMLFormElement>(null);
-
+  const [uploading, setUploading] = useState(false);
   const { language } = useLanguage();
 
-  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+  const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!formRef.current) return;
 
-    emailjs
-      .sendForm(
-        "service_sqzeaxu", // ✅ tvoj service ID
-        "template_fs0qvel", // ✅ tvoj template ID
-        formRef.current,
-        "66z6YyCaQIJcC0X2G" // ✅ tvoj public key
-      )
-      .then(
-        () => {
-          alert("✅ Your application has been successfully submitted!");
-          formRef.current?.reset();
+    const form = formRef.current;
+    const fileInput = form.querySelector<HTMLInputElement>('input[name="attachment"]');
+    const file = fileInput?.files?.[0];
+
+    let fileURL = "";
+
+    try {
+      if (file) {
+        setUploading(true);
+
+        // 🔥 Upload fajla u Firebase Storage
+        const storageRef = ref(storage, `applications/${file.name}-${Date.now()}`);
+        await uploadBytes(storageRef, file);
+
+        // ✅ Dobij URL za download
+        fileURL = await getDownloadURL(storageRef);
+        console.log("File uploaded:", fileURL);
+      }
+
+      // ✅ koristi FormData da uzme sva polja
+      const formData = new FormData(form);
+
+      await addDoc(collection(db, "applications"), {
+        name: formData.get("name"),
+        email: formData.get("email"),
+        phone: formData.get("phone"),
+        clinic: formData.get("clinic"),
+        country: formData.get("country"),
+        association: formData.get("association"),
+        title: formData.get("title"),
+        file_url: fileURL,
+        createdAt: Timestamp.now(),
+      });
+
+      await emailjs.send(
+        "service_sqzeaxu",
+        "template_fs0qvel",
+        {
+          name: formData.get("name"),
+          email: formData.get("email"),
+          phone: formData.get("phone"),
+          clinic: formData.get("clinic"),
+          country: formData.get("country"),
+          association: formData.get("association"),
+          title: formData.get("title"),
+          file_url: fileURL, // 👈 link na fajl
         },
-        (error: { text?: string }) => {
-          console.error("Email send error:", error.text || error);
-          alert("❌ Failed to send. Please try again later.");
-        }
+        "66z6YyCaQIJcC0X2G"
       );
+
+      alert(language === "en" ? "✅ Application submitted successfully!" : "✅ Prijava je uspješno poslata!");
+      form.reset();
+    } catch (error) {
+      console.error("Error:", error);
+      alert(language === "en" ? "❌ Submission failed." : "❌ Slanje nije uspjelo.");
+    } finally {
+      setUploading(false);
+    }
   };
 
   return (
@@ -182,8 +227,14 @@ const AppointmentForm: React.FC = () => {
                     </div>
 
                     <div className="text-center">
-                      <button type="submit" className="btn appointment-btn">
-                        {language === "en" ? "Submit Application" : "Pošalji prijavu"}
+                      <button type="submit" className="btn appointment-btn" disabled={uploading}>
+                        {uploading
+                          ? language === "en"
+                            ? "Uploading..."
+                            : "Otpremanje..."
+                          : language === "en"
+                          ? "Submit Application"
+                          : "Pošalji prijavu"}
                       </button>
                     </div>
                   </form>
