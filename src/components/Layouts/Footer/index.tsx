@@ -2,69 +2,100 @@
 
 import React from "react";
 import Link from "next/link";
-import FeedbackForm from "./FeedbackForm";
 import Image from "next/image";
+import { useLanguage } from "@/context/LanguageContext";
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
+  const { language } = useLanguage();
+
   return (
     <>
-      <footer className="pt-100 pb-70" style={{ backgroundImage: `url(/images/footer-bg.png)` }}>
+      <footer
+        className="pt-100 pb-70"
+        style={{ backgroundImage: `url(/images/footer-bg.png)` }}
+      >
         <div className="container">
           <div className="row">
+            {/* ✅ Kontakt sekcija */}
             <div className="col-sm-6 col-lg-4">
               <div className="footer-item">
                 <div className="footer-contact pe-2">
-                  <h3>Contact Us</h3>
+                  <h3>
+                    {language === "en" ? "Contact Us" : "Kontakt"}
+                  </h3>
                   <ul>
                     <li>
                       <i className="icofont-ui-message"></i>
-                      <a href="mailto:info@udruzenjeart.me">info@udruzenjeart.me</a>
-                      <a href="mailto:udruzenje.art.mne@gmail.com">udruzenje.art.mne@gmail.com</a>
+                      <a href="mailto:info@udruzenjeart.me">
+                        info@udruzenjeart.me
+                      </a>
+                      <a href="mailto:udruzenje.art.mne@gmail.com">
+                        udruzenje.art.mne@gmail.com
+                      </a>
                     </li>
                     <li>
                       <i className="icofont-stock-mobile"></i>
-                      <a href="tel:+38269820006">Call: +382 69 820 006</a>
-                      <a href="tel:+38269820006">Call: +382 69 820 006</a>{" "}
+                      <a href="tel:+38269820006">
+                        {language === "en"
+                          ? "Call: +382 69 820 006"
+                          : "Poziv: +382 69 820 006"}
+                      </a>
                     </li>
                     <li>
                       <i className="icofont-location-pin"></i>
-                      Podgorica, Crna Gora
+                      {language === "en" ? "Podgorica, Montenegro" : "Podgorica, Crna Gora"}
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
 
+            {/* ✅ Brzi linkovi */}
             <div className="col-sm-6 col-lg-2">
               <div className="footer-item">
                 <div className="footer-quick">
-                  <h3>Quick Links</h3>
+                  <h3>
+                    {language === "en" ? "Quick Links" : "Brzi linkovi"}
+                  </h3>
                   <ul>
                     <li>
-                      <Link href="/">Početna</Link>
+                      <Link href="/">
+                        {language === "en" ? "Home" : "Početna"}
+                      </Link>
                     </li>
                     <li>
-                      <Link href="/about">O udruženju</Link>
+                      <Link href="/about">
+                        {language === "en" ? "About" : "O udruženju"}
+                      </Link>
                     </li>
                     <li>
-                      <Link href="/appointment">Prijava</Link>
+                      <Link href="/appointment">
+                        {language === "en" ? "Application" : "Prijava"}
+                      </Link>
                     </li>
                     <li>
-                      <Link href="/contact">Kontakt</Link>
+                      <Link href="/contact">
+                        {language === "en" ? "Contact" : "Kontakt"}
+                      </Link>
                     </li>
                     <li>
-                      <Link href="/faq">Najčešća pitanja</Link>
+                      <Link href="/faq">
+                        {language === "en" ? "FAQ" : "Najčešća pitanja"}
+                      </Link>
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
 
+            {/* ✅ Društvene mreže */}
             <div className="col-sm-6 col-lg-3">
               <div className="footer-item">
                 <div className="footer-quick">
-                  <h3>Pratite nas</h3>
+                  <h3>
+                    {language === "en" ? "Follow Us" : "Pratite nas"}
+                  </h3>
                   <ul>
                     <li>
                       <a href="https://www.facebook.com" target="_blank">
@@ -74,7 +105,7 @@ const Footer: React.FC = () => {
                     <li>
                       <a href="https://www.instagram.com" target="_blank">
                         <i className="icofont-instagram"></i> Instagram
-                      </a>ESN Logo
+                      </a>
                     </li>
                     <li>
                       <a href="https://www.linkedin.com" target="_blank">
@@ -86,6 +117,7 @@ const Footer: React.FC = () => {
               </div>
             </div>
 
+            {/* ✅ Partner sekcija */}
             <div className="col-sm-6 col-lg-3">
               <div className="footer-item text-center">
                 <Image
@@ -101,8 +133,16 @@ const Footer: React.FC = () => {
                     filter: "drop-shadow(0 2px 6px rgba(0,0,0,0.1))",
                   }}
                 />
-                <p style={{ marginTop: "10px", fontSize: "14px", color: "white" }}>
-                  Partner projekta – Evropska studentska mreža
+                <p
+                  style={{
+                    marginTop: "10px",
+                    fontSize: "14px",
+                    color: "white",
+                  }}
+                >
+                  {language === "en"
+                    ? "Project Partner – European Student Network"
+                    : "Partner projekta – Evropska studentska mreža"}
                 </p>
               </div>
             </div>

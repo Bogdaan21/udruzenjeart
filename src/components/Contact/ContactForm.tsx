@@ -2,71 +2,97 @@
 
 import React from "react";
 import Image from "next/image";
+import { useLanguage } from "@/context/LanguageContext";
 
 const ContactForm: React.FC = () => {
+  const { language } = useLanguage();
+
+  // 🇲🇪 / 🇬🇧 tekstovi
+  const content = {
+    title:
+      language === "en"
+        ? "Drop your message for any info or question"
+        : "Pošaljite poruku za sve informacije ili pitanja",
+    placeholders: {
+      name: language === "en" ? "Your name" : "Vaše ime",
+      email: language === "en" ? "Your email address" : "Vaša email adresa",
+      phone: language === "en" ? "Your phone" : "Vaš broj telefona",
+      subject: language === "en" ? "Subject" : "Naslov poruke",
+      message: language === "en" ? "Your message..." : "Vaša poruka...",
+    },
+    button: language === "en" ? "Send Message" : "Pošalji poruku",
+    emergencyTitle: language === "en" ? "Emergency Call" : "Hitni poziv",
+  };
+
   return (
     <>
       <div className="drop-area">
         <div className="container-fluid">
           <div className="row">
+            {/* ✅ Lijeva strana - Forma */}
             <div className="col-lg-7 p-0">
               <div
                 className="drop-item drop-img"
                 style={{ backgroundImage: `url(/images/contact-form-bg.png)` }}
               >
                 <div className="drop-left">
-                  <h2>Drop your message for any info or question</h2>
+                  <h2>{content.title}</h2>
 
                   <form>
                     <div className="row">
+                      {/* Ime */}
                       <div className="col-lg-6 col-md-6">
                         <div className="form-group">
                           <input
                             type="text"
                             name="name"
                             className="form-control"
-                            placeholder="Your name"
+                            placeholder={content.placeholders.name}
                             required
                           />
                         </div>
                       </div>
 
+                      {/* Email */}
                       <div className="col-lg-6 col-md-6">
                         <div className="form-group">
                           <input
-                            type="text"
+                            type="email"
                             name="email"
                             className="form-control"
-                            placeholder="Your email address"
+                            placeholder={content.placeholders.email}
                             required
                           />
                         </div>
                       </div>
 
+                      {/* Telefon */}
                       <div className="col-lg-6 col-md-6 col-sm-6">
                         <div className="form-group">
                           <input
                             type="text"
                             name="number"
                             className="form-control"
-                            placeholder="Your Phone"
+                            placeholder={content.placeholders.phone}
                             required
                           />
                         </div>
                       </div>
 
+                      {/* Naslov */}
                       <div className="col-lg-6 col-md-6">
                         <div className="form-group">
                           <input
                             type="text"
                             name="subject"
                             className="form-control"
-                            placeholder="Your Subject"
+                            placeholder={content.placeholders.subject}
                             required
                           />
                         </div>
                       </div>
 
+                      {/* Poruka */}
                       <div className="col-lg-12 col-md-12 col-sm-12">
                         <div className="form-group">
                           <textarea
@@ -74,15 +100,16 @@ const ContactForm: React.FC = () => {
                             cols={30}
                             rows={6}
                             className="form-control"
-                            placeholder="Your message..."
+                            placeholder={content.placeholders.message}
                             required
                           ></textarea>
                         </div>
                       </div>
 
+                      {/* Dugme */}
                       <div className="col-lg-12 col-md-12 col-sm-12">
                         <button type="submit" className="drop-btn">
-                          Send Message
+                          {content.button}
                         </button>
                       </div>
                     </div>
@@ -91,6 +118,7 @@ const ContactForm: React.FC = () => {
               </div>
             </div>
 
+            {/* ✅ Desna strana - Slika i info */}
             <div className="col-lg-5 p-0">
               <div
                 className="speciality-item speciality-right speciality-right-two speciality-right-three"
@@ -108,7 +136,7 @@ const ContactForm: React.FC = () => {
                     <i className="icofont-ui-call"></i>
                   </div>
 
-                  <h3>Emergency Call</h3>
+                  <h3>{content.emergencyTitle}</h3>
                   <p>+382 69 820 006</p>
                 </div>
               </div>
