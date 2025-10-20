@@ -409,14 +409,14 @@ button:focus {
   font-size: 46px;
   color: #ffffff;
   margin-bottom: 25px;
-  max-width: 600px;
+  max-width: 700px;
   margin-left: 0;
   line-height: 1.4;
 }
 .slider-item .slider-text p {
   color: #ffffff;
   margin-bottom: 40px;
-  max-width: 575px;
+  max-width: 675px;
   margin-left: 0;
 }
 
@@ -516,14 +516,14 @@ button:focus {
 }
 .counter-item h3 {
   font-weight: 700;
-  font-size: 48px;
+  font-size: 30px;
   color: #0046c0;
   margin-bottom: 8px;
 }
 .counter-item p {
   margin-bottom: 0;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 15px;
 }
 
 /*-- End Counter --*/
@@ -1556,7 +1556,7 @@ footer {
   margin-bottom: 8px;
   position: absolute;
   top: 23px;
-  right: 70px;
+  right: 142px;
 }
 .speciality-right .speciality-emergency p {
   margin-bottom: 0;

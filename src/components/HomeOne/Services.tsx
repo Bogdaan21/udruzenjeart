@@ -1,5 +1,5 @@
 "use client";
-  
+
 import React from "react";
 import Link from "next/link";
 
@@ -9,21 +9,18 @@ const Services: React.FC = () => {
       <div className="services-area pb-70">
         <div className="container">
           <div className="section-title">
-            <h2>Our Hospital Services</h2>
+            <h2>Our Activities</h2>
           </div>
 
           <div className="row justify-content-center">
             <div className="col-sm-6 col-lg-3">
               <div className="service-item">
                 <div className="service-front">
-                  <i className="icofont-doctor"></i>
-                  <Link href="/services/details">
-                    <h3>Expert Doctor</h3>
+                  <i className="icofont-education"></i>
+                  <Link href="#">
+                    <h3>Professional Education</h3>
                   </Link>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod
-                  </p>
+                  <p>Organizing courses, workshops, and conferences to improve professional skills.</p>
                 </div>
               </div>
             </div>
@@ -31,14 +28,11 @@ const Services: React.FC = () => {
             <div className="col-sm-6 col-lg-3">
               <div className="service-item">
                 <div className="service-front">
-                  <i className="icofont-prescription"></i>
-                  <Link href="/services/details">
-                    <h3>Diagnosis</h3>
+                  <i className="icofont-users-alt-4"></i>
+                  <Link href="#">
+                    <h3>Networking</h3>
                   </Link>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod
-                  </p>
+                  <p>Connecting anesthetists, intensive care and transfusion professionals across Montenegro.</p>
                 </div>
               </div>
             </div>
@@ -46,29 +40,11 @@ const Services: React.FC = () => {
             <div className="col-sm-6 col-lg-3">
               <div className="service-item">
                 <div className="service-front">
-                  <i className="icofont-patient-file"></i>
-                  <Link href="/services/details">
-                    <h3>Pathology</h3>
+                  <i className="icofont-handshake-deal"></i>
+                  <Link href="#">
+                    <h3>Collaboration</h3>
                   </Link>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-sm-6 col-lg-3">
-              <div className="service-item">
-                <div className="service-front">
-                  <i className="icofont-tooth"></i>
-                  <Link href="/services/details">
-                    <h3>Dental Care</h3>
-                  </Link>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod
-                  </p>
+                  <p>Cooperation with domestic and international health organizations and associations.</p>
                 </div>
               </div>
             </div>
@@ -77,58 +53,10 @@ const Services: React.FC = () => {
               <div className="service-item">
                 <div className="service-front">
                   <i className="icofont-heart-beat-alt"></i>
-                  <Link href="/services/details">
-                    <h3>Cardiology</h3>
+                  <Link href="#">
+                    <h3>Support & Solidarity</h3>
                   </Link>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-sm-6 col-lg-3">
-              <div className="service-item">
-                <div className="service-front">
-                  <i className="icofont-drug"></i>
-                  <Link href="/services/details">
-                    <h3>Medicine</h3>
-                  </Link>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-sm-6 col-lg-3">
-              <div className="service-item">
-                <div className="service-front">
-                  <i className="icofont-dna-alt-1"></i>
-                  <Link href="/services/details">
-                    <h3>Neurology</h3>
-                  </Link>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-sm-6 col-lg-3">
-              <div className="service-item">
-                <div className="service-front">
-                  <i className="icofont-ambulance-cross"></i>
-                  <Link href="/services/details">
-                    <h3>Ambulance</h3>
-                  </Link>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod
-                  </p>
+                  <p>Promoting ethical values, teamwork and mutual support among healthcare professionals.</p>
                 </div>
               </div>
             </div>

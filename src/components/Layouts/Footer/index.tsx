@@ -3,6 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import FeedbackForm from "./FeedbackForm";
+import Image from "next/image";
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -41,22 +42,19 @@ const Footer: React.FC = () => {
                   <h3>Quick Links</h3>
                   <ul>
                     <li>
-                      <Link href="/about">About us</Link>
+                      <Link href="/">Početna</Link>
                     </li>
                     <li>
-                      <Link href="/about">Blog</Link>
+                      <Link href="/about">O udruženju</Link>
                     </li>
                     <li>
-                      <Link href="/blog/details">Our Expertise</Link>
+                      <Link href="/appointment">Prijava</Link>
                     </li>
                     <li>
-                      <Link href="/faq">Faq</Link>
+                      <Link href="/contact">Kontakt</Link>
                     </li>
                     <li>
-                      <Link href="/doctor">Doctors</Link>
-                    </li>
-                    <li>
-                      <Link href="/contact">Contact us</Link>
+                      <Link href="/faq">Najčešća pitanja</Link>
                     </li>
                   </ul>
                 </div>
@@ -66,25 +64,22 @@ const Footer: React.FC = () => {
             <div className="col-sm-6 col-lg-3">
               <div className="footer-item">
                 <div className="footer-quick">
-                  <h3>Our Services</h3>
+                  <h3>Pratite nas</h3>
                   <ul>
                     <li>
-                      <Link href="/services/details">Dental Care</Link>
+                      <a href="https://www.facebook.com" target="_blank">
+                        <i className="icofont-facebook"></i> Facebook
+                      </a>
                     </li>
                     <li>
-                      <Link href="/services/details">Cardiology</Link>
+                      <a href="https://www.instagram.com" target="_blank">
+                        <i className="icofont-instagram"></i> Instagram
+                      </a>ESN Logo
                     </li>
                     <li>
-                      <Link href="/services/details">Hijama Therapy</Link>
-                    </li>
-                    <li>
-                      <Link href="/services/details">Massage Therapy</Link>
-                    </li>
-                    <li>
-                      <Link href="/services/details">Ambluance Sevices</Link>
-                    </li>
-                    <li>
-                      <Link href="/services/details">Medicine</Link>
+                      <a href="https://www.linkedin.com" target="_blank">
+                        <i className="icofont-linkedin"></i> LinkedIn
+                      </a>
                     </li>
                   </ul>
                 </div>
@@ -92,8 +87,23 @@ const Footer: React.FC = () => {
             </div>
 
             <div className="col-sm-6 col-lg-3">
-              <div className="footer-item">
-                <FeedbackForm />
+              <div className="footer-item text-center">
+                <Image
+                  src="/images/esn.png"
+                  alt="ESN Logo"
+                  width={180}
+                  height={80}
+                  className="img-fluid"
+                  style={{
+                    background: "white",
+                    objectFit: "contain",
+                    marginTop: "10px",
+                    filter: "drop-shadow(0 2px 6px rgba(0,0,0,0.1))",
+                  }}
+                />
+                <p style={{ marginTop: "10px", fontSize: "14px", color: "white" }}>
+                  Partner projekta – Evropska studentska mreža
+                </p>
               </div>
             </div>
           </div>

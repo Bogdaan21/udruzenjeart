@@ -16,26 +16,21 @@ const MainBanner: React.FC = () => {
             <div className="container">
               <div className="slider-text">
                 <div className="slider-shape">
-                  <Image
-                    src="/images/covid-circle-image.png"
-                    alt="Shape"
-                    width={500}
-                    height={500}
-                  />
+                  <Image src="/images/covid-circle-image.png" alt="Shape" width={500} height={500} />
                 </div>
 
-                <h1>Stay Home And Be Aware About Covid-19</h1>
+                <h1>Zajedno gradimo snažniju i humaniju zdravstvenu zajednicu</h1>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Quis ipsum suspendisse ultrices gravida.
+                  Udruženje ART okuplja medicinske sestre i tehničare iz oblasti anestezije, intenzivne njege i
+                  transfuzije. Naša misija je unapređenje znanja, vještina i međusobne podrške kroz edukacije, stručne
+                  skupove i saradnju sa domaćim i međunarodnim institucijama.
                 </p>
 
                 <div className="common-btn">
-                  <Link href="/appointment">Get Appointment</Link>
+                  <Link href="/appointment">Prijavi se</Link>
 
                   <Link href="/about" className="cmn-btn-right">
-                    Learn More
+                    Pročitaj više
                   </Link>
                 </div>
               </div>

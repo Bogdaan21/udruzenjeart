@@ -27,16 +27,10 @@ export default function Page() {
 
       <AboutContent />
 
-      <FunFacts />
 
       <OurExpertise />
 
-      <Services />
-
-      <TestimonialSlider />
-
-      <LatestBlogPost />
-
+    
       <Footer />
     </>
   );

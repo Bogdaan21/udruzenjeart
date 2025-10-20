@@ -26,12 +26,6 @@ export default function Home() {
 
       <Services />
 
-      <OurExpertise />
-
-      <VideoIntro />
-
-      <OurDoctors />
-
       <Footer />
     </>
   );

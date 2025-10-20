@@ -10,7 +10,12 @@ const OurExpertise: React.FC = () => {
       <div className="expertise-area pb-70">
         <div className="container">
           <div className="section-title">
-            <h2>Our Expertise</h2>
+            <h2>Naša stručna područja</h2>
+            <p>
+              Udruženje okuplja zdravstvene radnike posvećene unapređenju
+              standarda i prakse u oblastima anestezije, intenzivne njege i
+              transfuzije, kroz kontinuiranu edukaciju i saradnju.
+            </p>
           </div>
 
           <div className="row align-items-center">
@@ -19,48 +24,52 @@ const OurExpertise: React.FC = () => {
                 <div className="row">
                   <div className="col-sm-6 col-lg-6">
                     <div className="expertise-inner">
-                      <i className="icofont-doctor-alt"></i>
+                      <i className="icofont-injection-syringe"></i>
                       <h3>
-                        <Link href="/doctors/details">Certified Doctors</Link>
+                        <Link href="#">Anestezija</Link>
                       </h3>
                       <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Promovisanje bezbjedne i efikasne primjene anestezije u
+                        svim zdravstvenim ustanovama.
                       </p>
                     </div>
                   </div>
 
                   <div className="col-sm-6 col-lg-6">
                     <div className="expertise-inner">
-                      <i className="icofont-stretcher"></i>
+                      <i className="icofont-heart-beat-alt"></i>
                       <h3>
-                        <Link href="/doctors/details">Emergency</Link>
+                        <Link href="#">Intenzivna njega</Link>
                       </h3>
                       <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Fokus na napredne metode liječenja i praćenja pacijenata
+                        u jedinicama intenzivne njege.
                       </p>
                     </div>
                   </div>
 
                   <div className="col-sm-6 col-lg-6">
                     <div className="expertise-inner">
-                      <i className="icofont-network"></i>
+                      <i className="icofont-blood-drop"></i>
                       <h3>
-                        <Link href="/doctors/details">Teachnology</Link>
+                        <Link href="#">Transfuzija</Link>
                       </h3>
                       <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Unapređenje znanja i standarda u oblasti transfuzijske
+                        medicine i bezbjednog rukovanja krvnim proizvodima.
                       </p>
                     </div>
                   </div>
 
                   <div className="col-sm-6 col-lg-6">
                     <div className="expertise-inner">
-                      <i className="icofont-ambulance-cross"></i>
+                      <i className="icofont-education"></i>
                       <h3>
-                        <Link href="/doctors/details">Ambulance</Link>
+                        <Link href="#">Edukacija i saradnja</Link>
                       </h3>
                       <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Organizovanje seminara, radionica i kongresa radi
+                        stalnog stručnog usavršavanja članova udruženja.
                       </p>
                     </div>
                   </div>
@@ -73,7 +82,7 @@ const OurExpertise: React.FC = () => {
                 <div className="expertise-right">
                   <Image
                     src="/images/about4.jpg"
-                    alt="Expertise"
+                    alt="Stručnost"
                     width={845}
                     height={850}
                   />

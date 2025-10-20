@@ -14,7 +14,7 @@ const AboutContent: React.FC = () => {
                 <div className="about-left">
                   <Image
                     src="/images/about1.jpg"
-                    alt="About"
+                    alt="O udruženju"
                     width={626}
                     height={552}
                   />
@@ -26,34 +26,30 @@ const AboutContent: React.FC = () => {
               <div className="about-item about-right">
                 <Image
                   src="/images/about-shape1.png"
-                  alt="About"
+                  alt="Dekoracija"
                   width={556}
                   height={712}
                 />
 
-                <h2>About Our Hospital</h2>
+                <h2>O Udruženju ART</h2>
 
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
-                  maecenas accumsan lacus vel facilisis.{" "}
+                  Udruženje anestezičara, tehničara intenzivne njege i transfuzije Crne Gore (ART)
+                  okuplja zdravstvene radnike posvećene unapređenju profesionalnih standarda,
+                  znanja i međusobne podrške. Naša misija je razvoj stručnosti, etike i humanosti
+                  kroz edukaciju, saradnju i razmjenu iskustava među kolegama širom zemlje.
                 </p>
 
-                <ul>
-                  <li>
-                    <i className="icofont-check-circled"></i>
-                    Browse Our Website
-                  </li>
-                  <li>
-                    <i className="icofont-check-circled"></i>
-                    Choose Service
-                  </li>
-                  <li>
-                    <i className="icofont-check-circled"></i>
-                    Send Messege
-                  </li>
-                </ul>
+                <p>
+                  Kroz kontinuirane aktivnosti i projekte, Udruženje ART podstiče profesionalni
+                  razvoj svojih članova, promoviše bezbjednost pacijenata i doprinosi unapređenju
+                  kvaliteta zdravstvene njege u Crnoj Gori.
+                </p>
+
+                <p>
+                  ART je zajednica koja vjeruje da zajedničkim znanjem, iskustvom i podrškom
+                  gradimo snažniji zdravstveni sistem i bolje uslove za svakog pacijenta.
+                </p>
               </div>
             </div>
           </div>
