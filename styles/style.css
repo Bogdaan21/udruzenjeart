@@ -3869,3 +3869,15 @@ footer {
   display: flex;
   justify-content: right;
 }
+
+/* Uklanja strelice iz number input polja (Chrome, Safari, Edge) */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Uklanja strelice iz number input polja (Firefox) */
+input[type=number] {
+  -moz-appearance: textfield;
+}

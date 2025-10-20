@@ -8,6 +8,8 @@ import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
 import { storage } from "@/firebase/firebaseConfig";
 import { db } from "@/firebase/firebaseConfig";
 import { collection, addDoc, Timestamp } from "firebase/firestore";
+import "react-phone-input-2/lib/style.css";
+import PhoneInput from "react-phone-input-2";
 
 const AppointmentForm: React.FC = () => {
   const formRef = useRef<HTMLFormElement>(null);
@@ -133,7 +135,7 @@ const AppointmentForm: React.FC = () => {
                           <i className="icofont-ui-call"></i>
                           <label>{language === "en" ? "Contact Phone" : "Kontakt telefon"}</label>
                           <input
-                            type="text"
+                            type="number"
                             className="form-control"
                             placeholder={language === "en" ? "Enter your phone number" : "Unesite broj telefona"}
                             name="phone"

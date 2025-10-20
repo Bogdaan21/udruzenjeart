@@ -31,7 +31,7 @@ export default function LanguageSelector() {
           style={{
             position: "absolute",
             top: "100%",
-            left: 0,
+            right: 0,
             display: "block",
             minWidth: "150px",
             borderRadius: "8px",

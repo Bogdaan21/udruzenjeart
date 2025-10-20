@@ -1,5 +1,5 @@
 "use client";
-  
+
 import React from "react";
 import Link from "next/link";
 import FeedbackForm from "./FeedbackForm";
@@ -8,10 +8,7 @@ const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
   return (
     <>
-      <footer
-        className="pt-100 pb-70"
-        style={{ backgroundImage: `url(/images/footer-bg.png)` }}
-      >
+      <footer className="pt-100 pb-70" style={{ backgroundImage: `url(/images/footer-bg.png)` }}>
         <div className="container">
           <div className="row">
             <div className="col-sm-6 col-lg-4">
@@ -26,8 +23,8 @@ const Footer: React.FC = () => {
                     </li>
                     <li>
                       <i className="icofont-stock-mobile"></i>
-                      <a href="tel:+07554332322">Call: +07 554 332 322</a>
-                      <a href="tel:+236256256365">Call: +236 256 256 365</a>
+                      <a href="tel:+38269820006">Call: +382 69 820 006</a>
+                      <a href="tel:+38269820006">Call: +382 69 820 006</a>{" "}
                     </li>
                     <li>
                       <i className="icofont-location-pin"></i>
@@ -107,11 +104,11 @@ const Footer: React.FC = () => {
         <div className="container">
           <div className="copyright-item">
             <p>
-               {currentYear}{" "}&copy; {" "}
+              {currentYear} &copy;{" "}
               <a href="https://botech.me/" target="_blank">
                 botech IT Solutions
               </a>
-              <span>, v0.1.0</span>
+              <span> v0.1.0</span>
             </p>
           </div>
         </div>

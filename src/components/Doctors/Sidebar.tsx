@@ -20,7 +20,7 @@ const Sidebar: React.FC = () => {
           <ul>
             <li>
               <i className="icofont-ui-call"></i>
-              Call: +07 554 332 322
+              Call: +382 69 820 006
             </li>
             <li>
               <i className="icofont-ui-message"></i>

@@ -109,7 +109,7 @@ const ContactForm: React.FC = () => {
                   </div>
 
                   <h3>Emergency Call</h3>
-                  <p>+07 554 332 322</p>
+                  <p>+382 69 820 006</p>
                 </div>
               </div>
             </div>

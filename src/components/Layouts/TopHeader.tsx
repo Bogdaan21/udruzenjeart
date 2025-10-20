@@ -13,9 +13,9 @@ const TopHeader: React.FC = () => {
                 <div className="header-top-left">
                   <ul>
                     <li>
-                      <a href="tel:+07554332322">
+                      <a href="tel:38269820006">
                         <i className="icofont-ui-call"></i>
-                        Call : +07 554 332 322
+                        Call : +382 69 820 006
                       </a>
                     </li>
                     <li>
