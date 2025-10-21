@@ -21,7 +21,7 @@ const ContactForm: React.FC = () => {
       message: language === "en" ? "Your message..." : "Vaša poruka...",
     },
     button: language === "en" ? "Send Message" : "Pošalji poruku",
-    emergencyTitle: language === "en" ? "Emergency Call" : "Hitni poziv",
+    emergencyTitle: language === "en" ? "Contact" : "Kontakt",
   };
 
   return (
@@ -122,7 +122,7 @@ const ContactForm: React.FC = () => {
             <div className="col-lg-5 p-0">
               <div
                 className="speciality-item speciality-right speciality-right-two speciality-right-three"
-                style={{ backgroundImage: `url(/images/about4.jpg)` }}
+                style={{ backgroundImage: `url(/images/d-home.jpg)` }}
               >
                 <Image
                   src="/images/about4.jpg"

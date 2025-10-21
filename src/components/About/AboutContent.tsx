@@ -16,7 +16,7 @@ const AboutContent: React.FC = () => {
               <div className="about-item">
                 <div className="about-left">
                   <Image
-                    src="/images/about1.jpg"
+                    src="/images/d-home.jpg"
                     alt={language === "en" ? "About the Association" : "O udruženju"}
                     width={626}
                     height={552}

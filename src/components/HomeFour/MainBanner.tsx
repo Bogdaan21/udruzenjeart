@@ -20,10 +20,10 @@ const MainBanner: React.FC = () => {
               <div className="slider-text">
                 <div className="slider-shape">
                   <Image
-                    src="/images/covid-circle-image.png"
+                    src="/images/cross-circle.png"
                     alt="Shape"
-                    width={500}
-                    height={500}
+                    width={350}
+                    height={350}
                   />
                 </div>
 

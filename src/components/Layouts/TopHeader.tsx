@@ -1,21 +1,30 @@
 "use client";
 
 import React from "react";
+import { useLanguage } from "@/context/LanguageContext";
 
 const TopHeader: React.FC = () => {
+  const { language } = useLanguage();
+
+  const content = {
+    call: language === "en" ? "Call" : "Poziv",
+    location: language === "en" ? "Podgorica, Montenegro" : "Podgorica, Crna Gora",
+  };
+
   return (
     <>
       <div className="header-top">
         <div className="container">
           <div className="row align-items-center">
+            {/* ✅ Lijeva strana */}
             <div className="col-sm-8 col-lg-9">
               <div className="header-top-item">
                 <div className="header-top-left">
                   <ul>
                     <li>
-                      <a href="tel:38269820006">
+                      <a href="tel:+38269820006">
                         <i className="icofont-ui-call"></i>
-                        Call : +382 69 820 006
+                        {content.call}: +382 69 820 006
                       </a>
                     </li>
                     <li>
@@ -26,13 +35,14 @@ const TopHeader: React.FC = () => {
                     </li>
                     <li>
                       <i className="icofont-location-pin"></i>
-                      Podgorica
+                      {content.location}
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
 
+            {/* ✅ Desna strana */}
             <div className="col-sm-4 col-lg-3">
               <div className="header-top-item">
                 <div className="header-top-right">

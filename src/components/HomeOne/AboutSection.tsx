@@ -18,7 +18,7 @@ const AboutSection: React.FC = () => {
               <div className="about-item">
                 <div className="about-left">
                   <Image
-                    src="/images/about1.jpg"
+                    src="/images/d-home.jpg"
                     alt={language === "en" ? "About ART Association" : "O Udruženju ART"}
                     width={626}
                     height={552}

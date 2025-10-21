@@ -62,7 +62,9 @@ const Navbar: React.FC = () => {
                 </ul>
               </div>
 
-              <LanguageSelector />
+              <div className="hide-mobile">
+                <LanguageSelector />
+              </div>
             </nav>
           </div>
         </div>

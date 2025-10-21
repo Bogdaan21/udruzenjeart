@@ -82,7 +82,7 @@ const AppointmentForm: React.FC = () => {
 
   return (
     <>
-      <div className="appointment-area-two ptb-100">
+      <div className="appointment-area-two ptb-50">
         <div className="container">
           <div className="row justify-content-center appointment-wrap-two">
             <div className="col-lg-12">
@@ -201,9 +201,8 @@ const AppointmentForm: React.FC = () => {
                           <input
                             type="text"
                             className="form-control"
-                            placeholder={language === "en" ? "Enter application topic" : "Unesite temu prijave"}
+                            placeholder={language === "en" ? "Enter application topic (option)" : "Unesite temu prijave (opciono)"}
                             name="title"
-                            required
                           />
                         </div>
                       </div>

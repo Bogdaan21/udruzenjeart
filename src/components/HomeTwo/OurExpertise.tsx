@@ -92,7 +92,7 @@ const OurExpertise: React.FC = () => {
             <div className="col-lg-5 pr-0">
               <div
                 className="speciality-item speciality-right"
-                style={{ backgroundImage: `url(/images/about4.jpg)` }}
+                style={{ backgroundImage: `url(/images/about-team.jpg)` }}
               >
                 <Image
                   src="/images/about4.jpg"

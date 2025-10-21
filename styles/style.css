@@ -99,6 +99,11 @@ img {
   padding-bottom: 100px;
 }
 
+.ptb-50 {
+  padding-top: 50px;
+  padding-bottom: 20s0px;
+}
+
 .pt-100 {
   padding-top: 100px;
 }
@@ -2162,7 +2167,7 @@ footer {
   top: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.5;
+  opacity: 0.6;
   background-color: #0046c0;
 }
 
@@ -3448,7 +3453,7 @@ footer {
   /* background-color: #0843aa; */
 }
 .slider-item-two .slider-shape img {
-  top: -75px;
+  top: 30px;
   right: 0;
   animation: item-two-ani 35s infinite linear;
 }
