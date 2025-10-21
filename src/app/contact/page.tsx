@@ -5,7 +5,7 @@ import TopHeader from "../../components/Layouts/TopHeader";
 import Navbar from "../../components/Layouts/Navbar";
 import PageBanner from "../../components/Common/PageBanner";
 import ContactInfo from "../../components/Contact/ContactInfo";
-import ContactForm from "../../components/Contact/ContactForm";
+// import ContactForm from "../../components/Contact/ContactForm";
 import GoogleMap from "../../components/Contact/GoogleMap";
 import Footer from "../../components/Layouts/Footer";
 import { useLanguage } from "@/context/LanguageContext";
@@ -34,7 +34,7 @@ export default function Page() {
       />
 
       <ContactInfo />
-      <ContactForm />
+      {/* <ContactForm /> */}
       <GoogleMap />
       <Footer />
     </>

@@ -20,7 +20,7 @@ const ContactInfo: React.FC = () => {
 
   return (
     <>
-      <div className="location-area pt-100 pb-70">
+      <div className="location-area pt-100">
         <div className="container">
           <div className="row justify-content-center location-wrap">
             {/* ✅ Lokacija */}

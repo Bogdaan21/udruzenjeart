@@ -95,7 +95,7 @@ const OurExpertise: React.FC = () => {
                 style={{ backgroundImage: `url(/images/about-team.jpg)` }}
               >
                 <Image
-                  src="/images/about4.jpg"
+                  src="/images/about-team.jpg"
                   alt={language === "en" ? "Our Mission" : "Naša misija"}
                   width={845}
                   height={850}
