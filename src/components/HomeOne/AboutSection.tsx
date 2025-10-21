@@ -22,6 +22,9 @@ const AboutSection: React.FC = () => {
                     alt={language === "en" ? "About ART Association" : "O Udruženju ART"}
                     width={626}
                     height={552}
+                    style={{
+                      filter: "brightness(70%)"
+                    }}
                   />
                 </div>
               </div>
@@ -30,26 +33,17 @@ const AboutSection: React.FC = () => {
             {/* RIGHT CONTENT */}
             <div className="col-lg-6">
               <div className="about-item about-right">
-                <Image
-                  src="/images/about-shape1.png"
-                  alt="Decoration"
-                  width={556}
-                  height={712}
-                />
+                <Image src="/images/about-shape1.png" alt="Decoration" width={556} height={712} />
 
                 {language === "en" ? (
                   <>
                     <h2>ART Association</h2>
                     <p>
-                      The Association of Anesthesiologists, Intensive Care and
-                      Transfusion Technicians of Montenegro (ART) brings together
-                      professionals who care daily for the most sensitive
-                      patients. Our mission is to develop professional standards,
-                      provide education, and encourage mutual support through
-                      collaboration, knowledge sharing, and continuous
-                      improvement. Through joint initiatives, we build a
-                      community where knowledge, humanity, and solidarity form
-                      the foundation of every progress.
+                      The Association of Anesthesiologists, Intensive Care and Transfusion Technicians of Montenegro
+                      (ART) brings together professionals who care daily for the most sensitive patients. Our mission is
+                      to develop professional standards, provide education, and encourage mutual support through
+                      collaboration, knowledge sharing, and continuous improvement. Through joint initiatives, we build
+                      a community where knowledge, humanity, and solidarity form the foundation of every progress.
                     </p>
 
                     <ul>
@@ -73,14 +67,11 @@ const AboutSection: React.FC = () => {
                   <>
                     <h2>Udruženje ART</h2>
                     <p>
-                      Udruženje anestezičara, tehničara intenzivne njege i
-                      transfuzije Crne Gore (ART) okuplja stručnjake koji
-                      svakodnevno brinu o najosjetljivijim pacijentima. Naša
-                      misija je razvoj profesionalnih standarda, edukacija i
-                      međusobna podrška kroz saradnju, razmjenu iskustava i
-                      stalno usavršavanje. Kroz zajedničke inicijative gradimo
-                      zajednicu u kojoj znanje, humanost i solidarnost čine osnov
-                      svakog napretka.
+                      Udruženje anestezičara, tehničara intenzivne njege i transfuzije Crne Gore (ART) okuplja
+                      stručnjake koji svakodnevno brinu o najosjetljivijim pacijentima. Naša misija je razvoj
+                      profesionalnih standarda, edukacija i međusobna podrška kroz saradnju, razmjenu iskustava i stalno
+                      usavršavanje. Kroz zajedničke inicijative gradimo zajednicu u kojoj znanje, humanost i solidarnost
+                      čine osnov svakog napretka.
                     </p>
 
                     <ul>

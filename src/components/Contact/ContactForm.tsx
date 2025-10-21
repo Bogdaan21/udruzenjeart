@@ -31,10 +31,7 @@ const ContactForm: React.FC = () => {
           <div className="row">
             {/* ✅ Lijeva strana - Forma */}
             <div className="col-lg-7 p-0">
-              <div
-                className="drop-item drop-img"
-                style={{ backgroundImage: `url(/images/contact-form-bg.png)` }}
-              >
+              <div className="drop-item drop-img" style={{ backgroundImage: `url(/images/contact-form-bg.png)` }}>
                 <div className="drop-left">
                   <h2>{content.title}</h2>
 
@@ -121,14 +118,15 @@ const ContactForm: React.FC = () => {
             {/* ✅ Desna strana - Slika i info */}
             <div className="col-lg-5 p-0">
               <div
-                className="speciality-item speciality-right speciality-right-two speciality-right-three"
-                style={{ backgroundImage: `url(/images/d-home.jpg)` }}
+                className="speciality-item speciality-right speciality-right-three"
+                style={{ backgroundImage: `url(/images/d-home.jpg)`, filter: "brightness(70%)" }}
               >
                 <Image
                   src="/images/about4.jpg"
                   alt="Contact"
                   width={845}
                   height={850}
+
                 />
 
                 <div className="speciality-emergency">

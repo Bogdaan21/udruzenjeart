@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { useLanguage } from "@/context/LanguageContext";
 
 export default function LanguageSelector() {
@@ -19,9 +20,13 @@ export default function LanguageSelector() {
         type="button"
         onClick={() => setOpen(!open)}
       >
-        <span style={{ fontSize: "20px" }}>
-          {language === "en" ? "🇬🇧" : "🇲🇪"}
-        </span>
+        <Image
+          src={language === "en" ? "/images/gb-flag.png" : "/images/mne-flag.png"}
+          alt={language === "en" ? "English" : "Crnogorski"}
+          width={24}
+          height={16}
+          style={{ borderRadius: "2px" }}
+        />
         <span>{language.toUpperCase()}</span>
       </button>
 
@@ -39,13 +44,15 @@ export default function LanguageSelector() {
           }}
         >
           <li>
-            <button className="dropdown-item" onClick={() => handleSelect("en")}>
-              🇬🇧 English
+            <button className="dropdown-item d-flex align-items-center gap-2" onClick={() => handleSelect("en")}>
+              <Image src="/images/gb-flag.png" alt="English" width={20} height={14} />
+              English
             </button>
           </li>
           <li>
-            <button className="dropdown-item" onClick={() => handleSelect("me")}>
-              🇲🇪 Crnogorski
+            <button className="dropdown-item d-flex align-items-center gap-2" onClick={() => handleSelect("me")}>
+              <Image src="/images/mne-flag.png" alt="Crnogorski" width={20} height={14} />
+              Crnogorski
             </button>
           </li>
         </ul>
