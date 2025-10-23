@@ -10,6 +10,30 @@ import OurDoctors from "../components/Common/OurDoctors";
 import LatestBlogPost from "../components/Common/LatestBlogPost";
 import NewsletterForm from "../components/Common/NewsletterForm";
 import Footer from "../components/Layouts/Footer";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Udruženje ART Crne Gore | Anestezija, njega i transfuzija",
+  description:
+    "Zvanični sajt Udruženja anestezičara, tehničara intenzivne njege i transfuzije Crne Gore (ART). Naša misija je unapređenje znanja, etike i saradnje u zdravstvenoj zajednici.",
+  openGraph: {
+    title: "Udruženje ART Crne Gore",
+    description:
+      "Udruženje anestezičara, tehničara intenzivne njege i transfuzije Crne Gore (ART) okuplja zdravstvene radnike posvećene znanju, humanosti i profesionalnom razvoju.",
+    url: "https://udruzenjeart.me",
+    siteName: "Udruženje ART",
+    locale: "me_ME",
+    type: "website",
+    images: [
+      {
+        url: "/images/og-banner.jpg", // možeš kasnije dodati neku banner sliku
+        width: 1200,
+        height: 630,
+        alt: "Udruženje ART Crne Gore",
+      },
+    ],
+  }
+};
 
 export default function Home() {
   return (

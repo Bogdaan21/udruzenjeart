@@ -46,7 +46,7 @@
   }
   .slider-item .slider-shape img {
     position: relative;
-    top: 0;
+    top: -20px;
     right: 0;
     left: 0;
     margin-left: auto;
@@ -1279,7 +1279,7 @@
     width: 45px;
     line-height: 45px;
     font-size: 22px;
-    margin-right: 10px;
+    /* margin-right: 10px; */
   }
   .appointment-item-two-right .appointment-item-content .content-one ul li:before {
     display: none;
@@ -1465,7 +1465,7 @@
   }
   .slider-item .slider-shape img {
     position: relative;
-    top: 0;
+    top: -50px;
     right: 0;
     left: 0;
     margin-left: auto;
@@ -1528,7 +1528,7 @@
     margin-bottom: 16px;
   }
   .counter-item h3 {
-    font-size: 38px;
+    font-size: 20px;
     margin-bottom: 5px;
   }
   .counter-item p {

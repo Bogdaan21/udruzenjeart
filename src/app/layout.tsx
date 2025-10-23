@@ -24,7 +24,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Udruženje arh Crne Gore",
+  title: "Udruženje ARH Crne Gore",
   description:
     "Zvanični sajt Udruženja anestezičara, tehničara intenzivne njege i transfuzije Crne Gore.",
 icons: {

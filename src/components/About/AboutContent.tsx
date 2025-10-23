@@ -1,5 +1,6 @@
 "use client";
 
+import Head from "next/head";
 import React from "react";
 import Image from "next/image";
 import { useLanguage } from "@/context/LanguageContext";
@@ -9,6 +10,18 @@ const AboutContent: React.FC = () => {
 
   return (
     <>
+      <Head>
+        <title>{language === "en" ? "About ART Association | Montenegro" : "O Udruženju ART | Crna Gora"}</title>
+        <meta
+          name="description"
+          content={
+            language === "en"
+              ? "Official site of the Association of Anesthesiologists, Intensive Care and Transfusion Technicians of Montenegro."
+              : "Zvanični sajt Udruženja anestezičara, tehničara intenzivne njege i transfuzije Crne Gore (ART)."
+          }
+        />
+        <meta property="og:image" content="/images/d-home.jpg" />
+      </Head>
       <div className="about-area pt-100 pb-70">
         <div className="container">
           <div className="row align-items-center">
