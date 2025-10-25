@@ -9,11 +9,11 @@ import { storage } from "@/firebase/firebaseConfig";
 import { db } from "@/firebase/firebaseConfig";
 import { collection, addDoc, Timestamp } from "firebase/firestore";
 import "react-phone-input-2/lib/style.css";
-import PhoneInput from "react-phone-input-2";
 
 const AppointmentForm: React.FC = () => {
   const formRef = useRef<HTMLFormElement>(null);
   const [uploading, setUploading] = useState(false);
+  const [type, setType] = useState<"Predavač" | "Slušalac" | "">(""); // 👈 čuva tip prijave
   const { language } = useLanguage();
 
   const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -27,9 +27,9 @@ const AppointmentForm: React.FC = () => {
     let fileURL = "";
 
     try {
-      if (file) {
-        setUploading(true);
+      setUploading(true);
 
+      if (file) {
         // 🔥 Upload fajla u Firebase Storage
         const storageRef = ref(storage, `applications/${file.name}-${Date.now()}`);
         await uploadBytes(storageRef, file);
@@ -67,13 +67,14 @@ const AppointmentForm: React.FC = () => {
           country: formData.get("country"),
           association: formData.get("association"),
           title: formData.get("title"),
-          file_url: fileURL, // 👈 link na fajl
+          file_url: fileURL,
         },
         "66z6YyCaQIJcC0X2G"
       );
 
       alert(language === "en" ? "✅ Application submitted successfully!" : "✅ Prijava je uspješno poslata!");
       form.reset();
+      setType("");
     } catch (error) {
       console.error("Error:", error);
       alert(language === "en" ? "❌ Submission failed." : "❌ Slanje nije uspjelo.");
@@ -101,22 +102,19 @@ const AppointmentForm: React.FC = () => {
                 <div className="appointment-form">
                   <form ref={formRef} onSubmit={sendEmail}>
                     <div className="row">
-                                            {/* ✅ Application Type */}
+                      {/* ✅ Application Type */}
                       <div className="col-lg-6">
                         <div className="form-group">
                           <i className="icofont-users-alt-4"></i>
-                          <label>
-                            {language === "en" ? "Application Type" : "Tip prijave"}
-                          </label>
-                          <select className="form-control" name="type" required>
-                            <option value="">
-                              {language === "en"
-                                ? "Select type..."
-                                : "Odaberite tip..."}
-                            </option>
-                            <option value="Predavač">
-                              {language === "en" ? "Lecturer / Speaker" : "Predavač"}
-                            </option>
+                          <label>{language === "en" ? "Application Type" : "Tip prijave"}</label>
+                          <select
+                            className="form-control"
+                            name="type"
+                            onChange={(e) => setType(e.target.value as "Predavač" | "Slušalac")}
+                            required
+                          >
+                            <option value="">{language === "en" ? "Select type..." : "Odaberite tip..."}</option>
+                            <option value="Predavač">{language === "en" ? "Lecturer / Speaker" : "Predavač"}</option>
                             <option value="Slušalac">
                               {language === "en" ? "Participant / Listener" : "Slušalac"}
                             </option>
@@ -225,10 +223,9 @@ const AppointmentForm: React.FC = () => {
                           <input
                             type="text"
                             className="form-control"
-                            placeholder={
-                              language === "en" ? "Enter application topic (option)" : "Unesite temu prijave (opciono)"
-                            }
+                            placeholder={language === "en" ? "Enter application topic" : "Unesite temu prijave"}
                             name="title"
+                            required={type === "Predavač"}
                           />
                         </div>
                       </div>
@@ -237,17 +234,13 @@ const AppointmentForm: React.FC = () => {
                       <div className="col-lg-6">
                         <div className="form-group">
                           <i className="icofont-file-pdf"></i>
-                          <label>
-                            {language === "en"
-                              ? "Documentation (only PDF)"
-                              : "Dokumentacija (samo PDF)"}
-                          </label>
+                          <label>{language === "en" ? "Documentation (only PDF)" : "Dokumentacija (samo PDF)"}</label>
                           <input
                             type="file"
                             className="form-control"
                             name="attachment"
                             accept=".pdf"
-                            required
+                            required={type === "Predavač"}
                           />
                         </div>
                       </div>
