@@ -239,14 +239,14 @@ const AppointmentForm: React.FC = () => {
                           <i className="icofont-file-pdf"></i>
                           <label>
                             {language === "en"
-                              ? "Documentation (PDF or Presentation)"
-                              : "Dokumentacija (PDF ili prezentacija)"}
+                              ? "Documentation (only PDF)"
+                              : "Dokumentacija (samo PDF)"}
                           </label>
                           <input
                             type="file"
                             className="form-control"
                             name="attachment"
-                            accept=".pdf,.ppt,.pptx,.doc,.docx"
+                            accept=".pdf"
                             required
                           />
                         </div>

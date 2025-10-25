@@ -3,8 +3,7 @@ import TopHeader from "../../components/Layouts/TopHeader";
 import Navbar from "../../components/Layouts/Navbar";
 import PageBanner from "../../components/Common/PageBanner";
 import OurExpertise from "../../components/HomeOne/OurExpertise";
-import TestimonialSlider from "../../components/Common/TestimonialSlider";
-import OurDoctors from "../../components/Common/OurDoctors";
+import ServiceDetailsContent from "@/components/Services/ServiceDetailsContent";
 import Footer from "../../components/Layouts/Footer";
 
 export default function Page() {
@@ -15,20 +14,14 @@ export default function Page() {
       <Navbar />
 
       <PageBanner
-        pageTitle="Testimonials"
+        pageTitle="Congress"
         homePageUrl="/"
         homePageText="Home"
-        activePageText="Testimonials"
+        activePageText="Congress"
         bgImage="/images/page-banner3.jpg"
       />
 
-      <div className="pt-100">
-        <OurExpertise />
-      </div>
-
-      <TestimonialSlider />
-
-      <OurDoctors />
+      <ServiceDetailsContent />
 
       <Footer />
     </>

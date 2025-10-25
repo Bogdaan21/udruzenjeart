@@ -133,17 +133,6 @@ const Footer: React.FC = () => {
                     filter: "drop-shadow(0 2px 6px rgba(0,0,0,0.1))",
                   }}
                 />
-                <p
-                  style={{
-                    marginTop: "10px",
-                    fontSize: "14px",
-                    color: "white",
-                  }}
-                >
-                  {language === "en"
-                    ? "Project Partner – European Student Network"
-                    : "Partner projekta – Evropska studentska mreža"}
-                </p>
               </div>
             </div>
           </div>
