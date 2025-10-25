@@ -10,7 +10,7 @@ const ServiceDetailsContent: React.FC = () => {
         <div className="container">
           <div className="services-details-img">
             <Image
-              src="/images/service-details-bg.jpg"
+              src="/images/princess-bar1.jpg"
               alt="Service Details"
               width={1920}
               height={1000}

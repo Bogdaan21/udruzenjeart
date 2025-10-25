@@ -11,35 +11,24 @@ const Footer: React.FC = () => {
 
   return (
     <>
-      <footer
-        className="pt-100 pb-70"
-        style={{ backgroundImage: `url(/images/footer-bg.png)` }}
-      >
+      <footer className="pt-100 pb-70" style={{ backgroundImage: `url(/images/footer-bg.png)` }}>
         <div className="container">
           <div className="row">
             {/* ✅ Kontakt sekcija */}
             <div className="col-sm-6 col-lg-4">
               <div className="footer-item">
                 <div className="footer-contact pe-2">
-                  <h3>
-                    {language === "en" ? "Contact Us" : "Kontakt"}
-                  </h3>
+                  <h3>{language === "en" ? "Contact Us" : "Kontakt"}</h3>
                   <ul>
                     <li>
                       <i className="icofont-ui-message"></i>
-                      <a href="mailto:info@udruzenjeart.me">
-                        info@udruzenjeart.me
-                      </a>
-                      <a href="mailto:udruzenje.art.mne@gmail.com">
-                        udruzenje.art.mne@gmail.com
-                      </a>
+                      <a href="mailto:info@udruzenjeart.me">info@udruzenjeart.me</a>
+                      <a href="mailto:udruzenje.art.mne@gmail.com">udruzenje.art.mne@gmail.com</a>
                     </li>
                     <li>
                       <i className="icofont-stock-mobile"></i>
                       <a href="tel:+38269820006">
-                        {language === "en"
-                          ? "Call: +382 69 820 006"
-                          : "Poziv: +382 69 820 006"}
+                        {language === "en" ? "Call: +382 69 820 006" : "Poziv: +382 69 820 006"}
                       </a>
                     </li>
                     <li>
@@ -55,34 +44,22 @@ const Footer: React.FC = () => {
             <div className="col-sm-6 col-lg-2">
               <div className="footer-item">
                 <div className="footer-quick">
-                  <h3>
-                    {language === "en" ? "Quick Links" : "Brzi linkovi"}
-                  </h3>
+                  <h3>{language === "en" ? "Quick Links" : "Brzi linkovi"}</h3>
                   <ul>
                     <li>
-                      <Link href="/">
-                        {language === "en" ? "Home" : "Početna"}
-                      </Link>
+                      <Link href="/">{language === "en" ? "Home" : "Početna"}</Link>
                     </li>
                     <li>
-                      <Link href="/about">
-                        {language === "en" ? "About" : "O udruženju"}
-                      </Link>
+                      <Link href="/about">{language === "en" ? "About" : "O udruženju"}</Link>
                     </li>
                     <li>
-                      <Link href="/appointment">
-                        {language === "en" ? "Application" : "Prijava"}
-                      </Link>
+                      <Link href="/congress">{language === "en" ? "Congress" : "Kongres"}</Link>
                     </li>
                     <li>
-                      <Link href="/contact">
-                        {language === "en" ? "Contact" : "Kontakt"}
-                      </Link>
+                      <Link href="/contact">{language === "en" ? "Contact" : "Kontakt"}</Link>
                     </li>
                     <li>
-                      <Link href="/faq">
-                        {language === "en" ? "FAQ" : "Najčešća pitanja"}
-                      </Link>
+                      <Link href="/appointment">{language === "en" ? "Application" : "Prijava"}</Link>
                     </li>
                   </ul>
                 </div>
@@ -93,9 +70,7 @@ const Footer: React.FC = () => {
             <div className="col-sm-6 col-lg-3">
               <div className="footer-item">
                 <div className="footer-quick">
-                  <h3>
-                    {language === "en" ? "Follow Us" : "Pratite nas"}
-                  </h3>
+                  <h3>{language === "en" ? "Follow Us" : "Pratite nas"}</h3>
                   <ul>
                     <li>
                       <a href="https://www.facebook.com" target="_blank">
@@ -107,11 +82,11 @@ const Footer: React.FC = () => {
                         <i className="icofont-instagram"></i> Instagram
                       </a>
                     </li>
-                    <li>
+                    {/* <li>
                       <a href="https://www.linkedin.com" target="_blank">
                         <i className="icofont-linkedin"></i> LinkedIn
                       </a>
-                    </li>
+                    </li> */}
                   </ul>
                 </div>
               </div>

@@ -14,11 +14,11 @@ export default function Page() {
       <Navbar />
 
       <PageBanner
-        pageTitle="Congress"
+        pageTitle="Hotel Princess Bar"
         homePageUrl="/"
         homePageText="Home"
         activePageText="Congress"
-        bgImage="/images/page-banner3.jpg"
+        bgImage="/images/princess-bar2.jpg"
       />
 
       <ServiceDetailsContent />

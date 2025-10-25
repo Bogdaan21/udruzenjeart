@@ -58,18 +58,28 @@ const CountdownSection = () => {
     <div className="countdown-wrapper text-center count slider-text fade-in">
       <h3 className="countdown-title">{labels.title}</h3>
 
-      <div className="countdown-box">
-        {[
-          { value: timeLeft.days, label: labels.days },
-          { value: timeLeft.hours, label: labels.hours },
-          { value: timeLeft.minutes, label: labels.minutes },
-          { value: timeLeft.seconds, label: labels.seconds },
-        ].map((item, index) => (
-          <div key={index} className="time-box">
-            <h2>{item.value}</h2>
-            <p>{item.label}</p>
+      <div className="countdown-grid">
+        {/* Gornji red – samo Days */}
+        <div className="days-box">
+          <div className="time-box big-box">
+            <h2>{timeLeft.days}</h2>
+            <p>{labels.days}</p>
           </div>
-        ))}
+        </div>
+
+        {/* Donji red – Hours, Minutes, Seconds */}
+        <div className="bottom-row">
+          {[
+            { value: timeLeft.hours, label: labels.hours },
+            { value: timeLeft.minutes, label: labels.minutes },
+            { value: timeLeft.seconds, label: labels.seconds },
+          ].map((item, index) => (
+            <div key={index} className="time-box small-box">
+              <h2>{item.value}</h2>
+              <p>{item.label}</p>
+            </div>
+          ))}
+        </div>
       </div>
 
       <div className="common-btn mt-4">
@@ -77,7 +87,7 @@ const CountdownSection = () => {
       </div>
 
       <style jsx>{`
-        /* 🕒 Glavni stil */
+        /* 🕒 Glavni layout */
         .count {
           margin-top: -160px !important;
         }
@@ -96,22 +106,34 @@ const CountdownSection = () => {
         .countdown-title {
           font-size: 25px;
           font-weight: 500;
-          margin-bottom: 45px;
+          margin-bottom: 35px;
           color: #ffffff;
         }
 
-        .countdown-box {
+        .countdown-grid {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 25px;
+        }
+
+        .days-box {
           display: flex;
           justify-content: center;
-          gap: 25px;
+          width: 100%;
+        }
+
+        .bottom-row {
+          display: flex;
+          justify-content: center;
+          gap: 20px;
           flex-wrap: wrap;
         }
 
+        /* 🧊 Stilovi za boxeve */
         .time-box {
           background: rgba(0, 0, 0, 0.45);
           border-radius: 12px;
-          width: 100px;
-          height: 100px;
           display: flex;
           flex-direction: column;
           justify-content: center;
@@ -120,14 +142,24 @@ const CountdownSection = () => {
           animation: pulse 2.5s infinite ease-in-out;
         }
 
+        .big-box {
+          width: 120px;
+          height: 120px;
+        }
+
+        .small-box {
+          width: 90px;
+          height: 90px;
+        }
+
         .time-box:hover {
           background: rgba(255, 255, 255, 0.15);
-          transform: translateY(-6px);
+          transform: translateY(-5px);
         }
 
         .time-box h2 {
           margin: 0;
-          font-size: 36px;
+          font-size: 38px;
           font-weight: 700;
           color: #fff;
           line-height: 1;
@@ -135,7 +167,7 @@ const CountdownSection = () => {
 
         .time-box p {
           margin: 6px 0 0;
-          font-size: 15px;
+          font-size: 14px;
           color: #ccc;
           text-transform: uppercase;
           letter-spacing: 0.5px;
@@ -153,7 +185,7 @@ const CountdownSection = () => {
           }
         }
 
-        /* 💓 Lagano pulsiranje brojeva */
+        /* 💓 Puls efekat */
         @keyframes pulse {
           0% {
             transform: scale(1);
@@ -172,13 +204,18 @@ const CountdownSection = () => {
             margin-top: 0px !important;
           }
 
-          .time-box {
-            width: 90px;
-            height: 90px;
+          .big-box {
+            width: 100px;
+            height: 100px;
+          }
+
+          .small-box {
+            width: 80px;
+            height: 80px;
           }
 
           .time-box h2 {
-            font-size: 26px;
+            font-size: 28px;
           }
 
           .countdown-title {

@@ -52,16 +52,16 @@ const TopHeader: React.FC = () => {
                         <i className="icofont-facebook"></i>
                       </a>
                     </li>
-                    <li>
+                    {/* <li>
                       <a href="https://twitter.com/" target="_blank">
                         <i className="icofont-twitter"></i>
                       </a>
-                    </li>
-                    <li>
+                    </li> */}
+                    {/* <li>
                       <a href="https://www.linkedin.com/" target="_blank">
                         <i className="icofont-linkedin"></i>
                       </a>
-                    </li>
+                    </li> */}
                     <li>
                       <a href="https://www.instagram.com/" target="_blank">
                         <i className="icofont-instagram"></i>
