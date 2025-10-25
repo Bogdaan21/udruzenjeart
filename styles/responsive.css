@@ -40,11 +40,11 @@
   /*-- Home Slider --*/
   .slider-item {
     height: 100%;
-    padding-top: 80px;
+    padding-top: 50px;
     padding-bottom: 80px;
     text-align: center;
   }
-  .slider-item .slider-shape img {
+  .slider-item .slider-shape div {
     position: relative;
     top: -20px;
     right: 0;
@@ -1288,7 +1288,7 @@
     margin-left: 10px;
   }
   /*----- Home Four CSS -----*/
-  .slider-item-two .slider-shape img {
+  .slider-item-two .slider-shape div {
     max-width: 100%;
   }
   .slider-item-two .slider-text h1 {
@@ -1463,7 +1463,7 @@
     margin-left: auto;
     margin-right: auto;
   }
-  .slider-item .slider-shape img {
+  .slider-item .slider-shape div {
     position: relative;
     top: -50px;
     right: 0;
@@ -1803,12 +1803,12 @@
   .home-slider-two .slider-item {
     height: 100%;
   }
-  .home-slider-two .slider-item .slider-shape img {
+  .home-slider-two .slider-item .slider-shape div {
     position: absolute;
     top: -160px;
     left: 0;
     width: 525px;
-    animation: a-three 5s infinite linear;
+    /* animation: a-three 5s infinite linear; */
   }
   .home-slider-two .slider-item:before {
     background-color: #fff;
@@ -2601,7 +2601,7 @@
   /*-- End Counter --*/
   /*----- END ABOUT PAGE -----*/
   /*----- Home Four CSS -----*/
-  .slider-item-two .slider-shape img {
+  .slider-item-two .slider-shape div {
     max-width: 100%;
   }
   .slider-item-two .slider-text h1 {
@@ -2698,7 +2698,7 @@
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   /*-- Home Slider --*/
-  .slider-item .slider-shape img {
+  .slider-item .slider-shape div {
     top: 115px;
     right: 0;
     max-width: 520px;
@@ -2819,7 +2819,7 @@
   .expertise-item .expertise-inner h3 {
     font-size: 18px;
   }
-  .slider-item-two .slider-shape img {
+  .slider-item-two .slider-shape div {
     top: 0;
     max-width: 365px;
   }

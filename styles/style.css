@@ -376,7 +376,7 @@ button:focus {
   height: 730px;
   position: relative;
 }
-.slider-item .slider-shape img {
+.slider-item .slider-shape div {
   position: absolute;
   top: -9px;
   right: -90px;
@@ -414,14 +414,12 @@ button:focus {
   font-size: 46px;
   color: #ffffff;
   margin-bottom: 25px;
-  max-width: 700px;
   margin-left: 0;
   line-height: 1.4;
 }
 .slider-item .slider-text p {
   color: #ffffff;
   margin-bottom: 40px;
-  max-width: 675px;
   margin-left: 0;
 }
 
@@ -443,6 +441,7 @@ button:focus {
 }
 .common-btn a:last-child {
   margin-right: 0;
+  width: max-content;
 }
 .common-btn .cmn-btn-right {
   background-color: transparent;
@@ -1305,12 +1304,12 @@ footer {
 .home-slider-two .slider-item {
   height: 830px;
 }
-.home-slider-two .slider-item .slider-shape img {
+.home-slider-two .slider-item .slider-shape div {
   position: absolute;
   top: -160px;
   left: 0;
   width: 525px;
-  animation: a-three 5s infinite linear;
+  /* animation: a-three 5s infinite linear; */
   z-index: -1;
 }
 .home-slider-two .slider-item::before {
@@ -3452,10 +3451,10 @@ footer {
   background-color: #000111;
   /* background-color: #0843aa; */
 }
-.slider-item-two .slider-shape img {
+.slider-item-two .slider-shape div {
   top: 30px;
   right: 0;
-  animation: item-two-ani 35s infinite linear;
+  /* animation: item-two-ani 35s infinite linear; */
 }
 .slider-item-two .slider-text h1 {
   margin-bottom: 25px;

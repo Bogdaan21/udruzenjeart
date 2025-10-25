@@ -43,6 +43,7 @@ const AppointmentForm: React.FC = () => {
       const formData = new FormData(form);
 
       await addDoc(collection(db, "applications"), {
+        type: formData.get("type"),
         name: formData.get("name"),
         email: formData.get("email"),
         phone: formData.get("phone"),
@@ -58,6 +59,7 @@ const AppointmentForm: React.FC = () => {
         "service_sqzeaxu",
         "template_fs0qvel",
         {
+          type: formData.get("type"),
           name: formData.get("name"),
           email: formData.get("email"),
           phone: formData.get("phone"),
@@ -99,6 +101,28 @@ const AppointmentForm: React.FC = () => {
                 <div className="appointment-form">
                   <form ref={formRef} onSubmit={sendEmail}>
                     <div className="row">
+                                            {/* ✅ Application Type */}
+                      <div className="col-lg-6">
+                        <div className="form-group">
+                          <i className="icofont-users-alt-4"></i>
+                          <label>
+                            {language === "en" ? "Application Type" : "Tip prijave"}
+                          </label>
+                          <select className="form-control" name="type" required>
+                            <option value="">
+                              {language === "en"
+                                ? "Select type..."
+                                : "Odaberite tip..."}
+                            </option>
+                            <option value="Predavač">
+                              {language === "en" ? "Lecturer / Speaker" : "Predavač"}
+                            </option>
+                            <option value="Slušalac">
+                              {language === "en" ? "Participant / Listener" : "Slušalac"}
+                            </option>
+                          </select>
+                        </div>
+                      </div>
                       {/* Full Name */}
                       <div className="col-lg-6">
                         <div className="form-group">
@@ -201,7 +225,9 @@ const AppointmentForm: React.FC = () => {
                           <input
                             type="text"
                             className="form-control"
-                            placeholder={language === "en" ? "Enter application topic (option)" : "Unesite temu prijave (opciono)"}
+                            placeholder={
+                              language === "en" ? "Enter application topic (option)" : "Unesite temu prijave (opciono)"
+                            }
                             name="title"
                           />
                         </div>

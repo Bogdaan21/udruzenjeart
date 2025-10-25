@@ -29,7 +29,7 @@ export default function Page() {
         homePageUrl="/"
         homePageText={content.homePageText}
         activePageText={content.activePageText}
-        bgImage="/images/page-banner1.jpg"
+        bgImage="/images/home-one/home-slider-bg.jpg"
       />
 
       <AboutContent />
