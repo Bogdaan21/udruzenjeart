@@ -402,7 +402,7 @@ button:focus {
   left: 0;
   top: 0;
   background-color: #0046c0;
-  opacity: 0.8;
+  opacity: 0.5;
 }
 .slider-item .slider-text {
   position: relative;

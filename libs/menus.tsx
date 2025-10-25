@@ -13,8 +13,8 @@ export const useMenus = () => {
       link: "/about/",
     },
     {
-      label: language === "en" ? "Appointment" : "Prijava",
-      link: "/appointment/",
+      label: language === "en" ? "Congress" : "Kongres",
+      link: "/congress/",
     },
     {
       label: language === "en" ? "Contact" : "Kontakt",
