@@ -14,6 +14,7 @@ import "../../styles/responsive.css";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import GoTop from "@/components/Layouts/GoTop";
+import Script from "next/script";
 
 import { LanguageProvider } from "@/context/LanguageContext";
 
@@ -41,10 +42,26 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="me">
       <body className={poppins.className}>
         <LanguageProvider>{children}</LanguageProvider>
         <GoTop />
+
+        {/* ✅ Google Analytics (GA4) */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-5L0ZJ6EVNQ"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-5L0ZJ6EVNQ', {
+              page_path: window.location.pathname,
+            });
+          `}
+        </Script>
       </body>
     </html>
   );

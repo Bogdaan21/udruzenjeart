@@ -70,6 +70,7 @@ p {
 a {
   transition: 0.5s all ease;
   text-decoration: none;
+      color: #4a6f8a;
 }
 a:hover {
   text-decoration: none;
