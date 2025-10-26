@@ -37,20 +37,7 @@ const Navbar: React.FC = () => {
             <nav className="navbar navbar-expand-md navbar-light">
               <Link href="/" className="navbar-brand">
                 <Image src="/images/logo-1.png" alt="logo" width={250} height={32} />
-                                          <Image
-                            src="/images/esn.png"
-                            alt="ESN Logo"
-                            width={180}
-                            height={80}
-                            className="img-fluid"
-                            style={{
-                              background: "white",
-                              objectFit: "contain",
 
-                              marginRight: "20px",
-                              filter: "drop-shadow(0 2px 6px rgba(0,0,0,0.1))",
-                            }}
-                          />
               </Link>
 
               <button

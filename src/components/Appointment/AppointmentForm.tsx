@@ -9,12 +9,16 @@ import { storage } from "@/firebase/firebaseConfig";
 import { db } from "@/firebase/firebaseConfig";
 import { collection, addDoc, Timestamp } from "firebase/firestore";
 import "react-phone-input-2/lib/style.css";
+import { SuccessPopup } from "./SuccessPopup";
+
 
 const AppointmentForm: React.FC = () => {
   const formRef = useRef<HTMLFormElement>(null);
   const [uploading, setUploading] = useState(false);
   const [type, setType] = useState<"Predavač" | "Slušalac" | "">(""); // 👈 čuva tip prijave
   const { language } = useLanguage();
+  const [showPopup, setShowPopup] = useState(false);
+  const [popupMessage, setPopupMessage] = useState("");
 
   const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -72,15 +76,23 @@ const AppointmentForm: React.FC = () => {
         "66z6YyCaQIJcC0X2G"
       );
 
-      alert(language === "en" ? "✅ Application submitted successfully!" : "✅ Prijava je uspješno poslata!");
-      form.reset();
-      setType("");
+      setPopupMessage(language === "en" ? "Application successfully submitted!" : "Prijava je uspješno poslata!");
+      setShowPopup(true);
     } catch (error) {
       console.error("Error:", error);
-      alert(language === "en" ? "❌ Submission failed." : "❌ Slanje nije uspjelo.");
+      setPopupMessage(language === "en" ? "Submission failed." : "Slanje nije uspjelo.");
+      setShowPopup(true);
     } finally {
       setUploading(false);
     }
+  };
+
+  const handleClosePopup = () => {
+    setShowPopup(false);
+    if (formRef.current) {
+      formRef.current.reset();
+    }
+    setType("");
   };
 
   return (
@@ -264,6 +276,7 @@ const AppointmentForm: React.FC = () => {
           </div>
         </div>
       </div>
+      {showPopup && <SuccessPopup message={popupMessage} onClose={handleClosePopup} />}
     </>
   );
 };
