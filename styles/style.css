@@ -3886,3 +3886,7 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
+
+.sticky-top {
+  z-index: 10 !important;
+}
