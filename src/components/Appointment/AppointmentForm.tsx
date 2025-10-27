@@ -11,7 +11,6 @@ import { collection, addDoc, Timestamp } from "firebase/firestore";
 import "react-phone-input-2/lib/style.css";
 import { SuccessPopup } from "./SuccessPopup";
 
-
 const AppointmentForm: React.FC = () => {
   const formRef = useRef<HTMLFormElement>(null);
   const [uploading, setUploading] = useState(false);
@@ -268,6 +267,33 @@ const AppointmentForm: React.FC = () => {
                           ? "Submit Application"
                           : "Pošalji prijavu"}
                       </button>
+                      {language === "en" ? (
+                        <p className="mt-3">
+                          For accommodation during the event, we recommend{" "}
+                          <a
+                            href="https://www.hotelprincess.me/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            style={{ fontWeight: "bold", color: "#007bff" }}
+                          >
+                            Hotel Princess
+                          </a>{" "}
+                          in Bar. For information and reservations, please contact the hotel directly.
+                        </p>
+                      ) : (
+                        <p className="mt-3">
+                          Za smještaj tokom događaja preporučujemo{" "}
+                          <a
+                            href="https://www.hotelprincess.me/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            style={{ fontWeight: "bold", color: "#007bff" }}
+                          >
+                            Hotel Princess
+                          </a>{" "}
+                          u Baru. Za informacije i rezervacije kontaktirajte direktno hotel.
+                        </p>
+                      )}
                     </div>
                   </form>
                 </div>

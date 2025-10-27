@@ -55,6 +55,10 @@ const AboutContent: React.FC = () => {
                       education, collaboration, and knowledge exchange among colleagues across the country.
                     </p>
                     <p>
+                      The Association was founded on October 28, 2024, with the goal of uniting professionals and
+                      promoting the continuous development of the healthcare system in Montenegro.
+                    </p>
+                    <p>
                       Through continuous activities and projects, the ART Association encourages professional
                       development, promotes patient safety, and contributes to improving the quality of healthcare in
                       Montenegro.
@@ -72,6 +76,10 @@ const AboutContent: React.FC = () => {
                       zdravstvene radnike posvećene unapređenju profesionalnih standarda, znanja i međusobne podrške.
                       Naša misija je razvoj stručnosti, etike i humanosti kroz edukaciju, saradnju i razmjenu iskustava
                       među kolegama širom zemlje.
+                    </p>
+                    <p>
+                      Udruženje je osnovano 28. oktobra 2024. godine sa ciljem da ujedini stručnjake i unaprijedi
+                      kontinuirani razvoj zdravstvenog sistema u Crnoj Gori.
                     </p>
                     <p>
                       Kroz kontinuirane aktivnosti i projekte, Udruženje ART podstiče profesionalni razvoj svojih

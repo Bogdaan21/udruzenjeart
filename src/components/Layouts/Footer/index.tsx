@@ -73,12 +73,12 @@ const Footer: React.FC = () => {
                   <h3>{language === "en" ? "Follow Us" : "Pratite nas"}</h3>
                   <ul>
                     <li>
-                      <a href="https://www.facebook.com" target="_blank">
+                      <a href="https://www.facebook.com/people/Udruzenje-anesteti%C4%8Daratehni%C4%8Dara-intenzivne-njege-i-transfuzije-Crne-Gore/61574532365801/?rdid=sNcR4PikCshjW2WM&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F16rosXR6xN%2F" target="_blank">
                         <i className="icofont-facebook"></i> Facebook
                       </a>
                     </li>
                     <li>
-                      <a href="https://www.instagram.com" target="_blank">
+                      <a href="https://www.instagram.com/udruzenjeart/?igsh=MWVmajQ3ZHBlcGlsOQ%3D%3D&utm_source=qr#" target="_blank">
                         <i className="icofont-instagram"></i> Instagram
                       </a>
                     </li>

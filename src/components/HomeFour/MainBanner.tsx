@@ -28,6 +28,20 @@ const MainBanner: React.FC = () => {
                           international institutions.
                         </p>
                         <div className="common-btn">
+                          <Image
+                            src="/images/esn.png"
+                            alt="ESN Logo"
+                            width={180}
+                            height={80}
+                            className="img-fluid"
+                            style={{
+                              background: "white",
+                              objectFit: "contain",
+
+                              marginRight: "20px",
+                              filter: "drop-shadow(0 2px 6px rgba(0,0,0,0.1))",
+                            }}
+                          />
                           <Link href="/congress" className="cmn-btn-right">
                             Congress
                           </Link>
