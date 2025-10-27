@@ -8,7 +8,7 @@ const CountdownSection = () => {
   const { language } = useLanguage();
 
   // 🎯 Datum do kog se odbrojava
-  const targetDate = new Date("2025-12-31T23:59:59").getTime();
+  const targetDate = new Date("2026-04-01T23:59:59").getTime();
 
   const [timeLeft, setTimeLeft] = useState({
     days: 0,

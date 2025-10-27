@@ -30,8 +30,8 @@ export const SuccessPopup: React.FC<{ message: string; onClose: () => void }> = 
         <h2>✅ {message}</h2>
         <p>
           {message === "Application successfully submitted!"
-            ? "For accommodation, we recommend Hotel Princess, Bar. You can make your reservation directly at reception or through the hotel website."
-            : "Za smještaj preporučujemo Hotel Princess u Baru. Možete rezervisati sobu direktno na recepciji ili putem zvaničnog sajta hotela."}
+            ? "For accommodation, we recommend Hotel Princess in Bar. For information and room reservations, please contact the Hotel Princess directly."
+            : "Za smještaj preporučujemo Hotel Princess u Baru. Informacije i rezervaciju smještaja kontaktirajte direktno hotel Princess."}
         </p>
         <p>
           <a href="https://www.hotelprincess.me/" target="_blank" rel="noopener noreferrer">
