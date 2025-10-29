@@ -27,7 +27,7 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Udruženje ART Crne Gore",
   description:
-    "Zvanični sajt Udruženja anestezičara, tehničara intenzivne njege i transfuzije Crne Gore.",
+    "Zvanični sajt Udruženja anestetičara, tehničara intenzivne njege i transfuzije Crne Gore.",
 icons: {
   icon: "/favicon_io/favicon.ico",
   shortcut: "/favicon_io/favicon-32x32.png",

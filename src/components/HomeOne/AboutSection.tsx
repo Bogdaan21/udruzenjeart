@@ -17,7 +17,7 @@ const AboutSection: React.FC = () => {
           content={
             language === "en"
               ? "Official site of the Association of Anesthesiologists, Intensive Care and Transfusion Technicians of Montenegro."
-              : "Zvanični sajt Udruženja anestezičara, tehničara intenzivne njege i transfuzije Crne Gore (ART)."
+              : "Zvanični sajt Udruženja anestetičara, tehničara intenzivne njege i transfuzije Crne Gore (ART)."
           }
         />
         <meta property="og:image" content="/images/d-home.jpg" />
@@ -79,7 +79,7 @@ const AboutSection: React.FC = () => {
                   <>
                     <h2>Udruženje ART</h2>
                     <p>
-                      Udruženje anestezičara, tehničara intenzivne njege i transfuzije Crne Gore (ART) okuplja
+                      Udruženje anestetičara, tehničara intenzivne njege i transfuzije Crne Gore (ART) okuplja
                       stručnjake koji svakodnevno brinu o najosjetljivijim pacijentima. Naša misija je razvoj
                       profesionalnih standarda, edukacija i međusobna podrška kroz saradnju, razmjenu iskustava i stalno
                       usavršavanje. Kroz zajedničke inicijative gradimo zajednicu u kojoj znanje, humanost i solidarnost

@@ -8,10 +8,10 @@ import AppointmentForm from "../../components/Appointment/AppointmentForm";
 export const metadata = {
   title: "Prijava | Udruženje ART Crne Gore",
   description:
-    "Pridružite se Udruženju anestezičara, tehničara intenzivne njege i transfuzije Crne Gore (ART). Popunite prijavni formular i postanite dio naše zajednice stručnjaka.",
+    "Pridružite se Udruženju anestetičara, tehničara intenzivne njege i transfuzije Crne Gore (ART). Popunite prijavni formular i postanite dio naše zajednice stručnjaka.",
   keywords: [
     "ART Crna Gora",
-    "Udruženje anestezičara",
+    "Udruženje anestetičara",
     "intenzivna njega",
     "transfuzija",
     "zdravstveni radnici",

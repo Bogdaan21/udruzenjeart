@@ -15,11 +15,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Udruženje ART Crne Gore | Anestezija, njega i transfuzija",
   description:
-    "Zvanični sajt Udruženja anestezičara, tehničara intenzivne njege i transfuzije Crne Gore (ART). Naša misija je unapređenje znanja, etike i saradnje u zdravstvenoj zajednici.",
+    "Zvanični sajt Udruženja anestetičara, tehničara intenzivne njege i transfuzije Crne Gore (ART). Naša misija je unapređenje znanja, etike i saradnje u zdravstvenoj zajednici.",
   openGraph: {
     title: "Udruženje ART Crne Gore",
     description:
-      "Udruženje anestezičara, tehničara intenzivne njege i transfuzije Crne Gore (ART) okuplja zdravstvene radnike posvećene znanju, humanosti i profesionalnom razvoju.",
+      "Udruženje anestetičara, tehničara intenzivne njege i transfuzije Crne Gore (ART) okuplja zdravstvene radnike posvećene znanju, humanosti i profesionalnom razvoju.",
     url: "https://udruzenjeart.me",
     siteName: "Udruženje ART",
     locale: "me_ME",
