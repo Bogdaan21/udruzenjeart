@@ -81,13 +81,13 @@ const ServiceDetailsContent: React.FC = () => {
             )}
           </div>
 
-          <div className="row">
+          {/* <div className="row">
             <div className="col-lg-5">
               <div className="service-details-inner-left" style={{ backgroundImage: `url(/images/signup-bg.jpg)` }}>
                 <Image src="/images/signup-bg.jpg" alt="Service" width={1920} height={1200} />
               </div>
             </div>
-            {/* <div className="col-lg-7">
+            <div className="col-lg-7">
               <div className="service-details-inner">
                 <h2>We Always Take Care Our Patient</h2>
                 <p>
@@ -103,8 +103,8 @@ const ServiceDetailsContent: React.FC = () => {
                   laboriosam unde.
                 </p>
               </div>
-            </div> */}
-          </div>
+            </div>
+          </div> */}
         </div>
       </div>
     </>
