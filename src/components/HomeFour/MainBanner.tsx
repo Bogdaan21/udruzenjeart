@@ -49,7 +49,7 @@ const MainBanner: React.FC = () => {
                       </>
                     ) : (
                       <>
-                        <h1>Zajedno gradimo snažniju i humaniju zdravstvenu zajednicu</h1>
+                        <h1>Udruženje ART <br/>Zajedno gradimo snažniju i humaniju zdravstvenu zajednicu</h1>
                         <p>
                           Udruženje ART okuplja medicinske sestre i tehničare iz oblasti anestezije, intenzivne njege i
                           transfuzije. Naša misija je unapređenje znanja, vještina i međusobne podrške kroz edukacije,
