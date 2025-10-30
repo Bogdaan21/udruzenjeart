@@ -9,6 +9,19 @@ import CountdownSection from "../CountdownSection/CountdownSection";
 const MainBanner: React.FC = () => {
   const { language } = useLanguage();
 
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Udruženje ART Crne Gore",
+    alternateName: "Association of Anesthesiologists, Intensive Care and Transfusion Technicians of Montenegro",
+    url: "https://www.udruzenjeart.me",
+    logo: "https://www.udruzenjeart.me/favicon.ico",
+    sameAs: [
+      "https://www.facebook.com/people/Udruzenje-anesteti%C4%8Daratehni%C4%8Dara-intenzivne-njege-i-transfuzije-Crne-Gore/61574532365801/?rdid=sNcR4PikCshjW2WM&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F16rosXR6xN%2F",
+      "https://www.instagram.com/udruzenjeart/?igsh=MWVmajQ3ZHBlcGlsOQ%3D%3D&utm_source=qr#",
+    ],
+  };
+
   return (
     <>
       <div className="slider-item slider-item-two" style={{ backgroundImage: `url(/images/home-one/anest.png)` }}>
@@ -20,7 +33,7 @@ const MainBanner: React.FC = () => {
                   <div className="slider-text pe-lg-4">
                     {language === "en" ? (
                       <>
-                        <h1>Together We Build a Stronger and More Compassionate Healthcare Community</h1>
+                        <h2>Together We Build a Stronger and More Compassionate Healthcare Community</h2>
                         <p>
                           The ART Association brings together nurses and technicians in the fields of anesthesia,
                           intensive care, and transfusion. Our mission is to improve knowledge, skills, and mutual
@@ -49,7 +62,11 @@ const MainBanner: React.FC = () => {
                       </>
                     ) : (
                       <>
-                        <h1>Udruženje ART <br/>Zajedno gradimo snažniju i humaniju zdravstvenu zajednicu</h1>
+                        <h1>
+                          Udruženje ART Crne Gore
+                          <br />
+                        </h1>
+                        <h2>Zajedno gradimo snažniju i humaniju zdravstvenu zajednicu</h2>
                         <p>
                           Udruženje ART okuplja medicinske sestre i tehničare iz oblasti anestezije, intenzivne njege i
                           transfuzije. Naša misija je unapređenje znanja, vještina i međusobne podrške kroz edukacije,
@@ -106,6 +123,13 @@ const MainBanner: React.FC = () => {
           margin-bottom: 20px;
         }
 
+        .slider-text h2 {
+          font-size: 42px;
+          line-height: 1.3;
+          font-weight: 700;
+          color: rgba(255, 255, 255, 0.9);
+        }
+
         .slider-text p {
           font-size: 18px;
           color: rgba(255, 255, 255, 0.9);
@@ -127,6 +151,7 @@ const MainBanner: React.FC = () => {
           }
         }
       `}</style>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />
     </>
   );
 };

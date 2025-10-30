@@ -9,7 +9,7 @@ export default function NotFound() {
           <div className="d-table">
             <div className="d-table-cell">
               <div className="error-text">
-                <h1>404!</h1>
+                <h2>404!</h2>
                 <p>Sorry! The Page Not Found</p>
                 <span>
                   Oops! The page you are looking for does not exit. it might

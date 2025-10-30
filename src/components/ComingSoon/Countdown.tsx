@@ -53,7 +53,7 @@ const Countdown: React.FC<CountdownProps> = ({ endDate }) => {
             <div className="d-table-cell">
               <div className="container">
                 <div className="coming-text">
-                  <h1>Under Construction...</h1>
+                  <h2>Under Construction...</h2>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea
                     deserunt beatae voluptas, animi harum dolorum totam,

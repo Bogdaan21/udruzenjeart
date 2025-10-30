@@ -12,7 +12,7 @@ const MainBanner: React.FC = () => {
           <div className="d-table-cell">
             <div className="container">
               <div className="banner-item">
-                <h1>Your Healthy Life is Our First Priority</h1>
+                <h2>Your Healthy Life is Our First Priority</h2>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.

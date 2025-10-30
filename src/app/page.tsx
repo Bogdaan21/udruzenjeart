@@ -11,6 +11,14 @@ export const metadata: Metadata = {
   title: "Udruženje ART Crne Gore | Anestezija, njega i transfuzija",
   description:
     "Zvanični sajt Udruženja anestetičara, tehničara intenzivne njege i transfuzije Crne Gore (ART). Naša misija je unapređenje znanja, etike i saradnje u zdravstvenoj zajednici.",
+  keywords: [
+    "Udruženje ART",
+    "Udruženje ART Crne Gore",
+    "anestezija Crna Gora",
+    "intenzivna njega",
+    "transfuzija",
+    "medicinski tehničari Crna Gora",
+  ],
   openGraph: {
     title: "Udruženje ART Crne Gore",
     description:
@@ -27,7 +35,7 @@ export const metadata: Metadata = {
         alt: "Udruženje ART Crne Gore",
       },
     ],
-  }
+  },
 };
 
 export default function Home() {

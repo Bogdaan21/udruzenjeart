@@ -33,7 +33,7 @@ const HeroSlider: React.FC = () => {
                         height={712}
                       />
                     </div>
-                    <h1>We have Fantastic Doctors and Dentist</h1>
+                    <h2>We have Fantastic Doctors and Dentist</h2>
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                       sed do eiusmod tempor incididunt ut labore et dolore magna
@@ -72,7 +72,7 @@ const HeroSlider: React.FC = () => {
                         height={712}
                       />
                     </div>
-                    <h1>We Always Provide Best Services</h1>
+                    <h2>We Always Provide Best Services</h2>
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                       sed do eiusmod tempor incididunt ut labore et dolore magna
@@ -111,7 +111,7 @@ const HeroSlider: React.FC = () => {
                         height={712}
                       />
                     </div>
-                    <h1>Hign Quality Medicines at Lowest Rates</h1>
+                    <h2>Hign Quality Medicines at Lowest Rates</h2>
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                       sed do eiusmod tempor incididunt ut labore et dolore magna

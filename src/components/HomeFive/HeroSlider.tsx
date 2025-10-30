@@ -29,7 +29,7 @@ const HeroSlider: React.FC = () => {
                 <div className="container">
                   <div className="slider-text">
                     <span>Stay Safe &</span>
-                    <h1>Be Informed About Covid-19</h1>
+                    <h2>Be Informed About Covid-19</h2>
 
                     <div className="common-btn">
                       <Link href="/appointment">Get Appointment</Link>
@@ -56,7 +56,7 @@ const HeroSlider: React.FC = () => {
                 <div className="container">
                   <div className="slider-text">
                     <span>Stay Safe &</span>
-                    <h1>Be Aware About Covid-19</h1>
+                    <h2>Be Aware About Covid-19</h2>
 
                     <div className="common-btn">
                       <Link href="/appointment">Get Appointment</Link>

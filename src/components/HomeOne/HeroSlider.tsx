@@ -38,7 +38,7 @@ const HeroSlider: React.FC = () => {
                       />
                     </div>
 
-                    <h1>Exceptional Health Care for Woman</h1>
+                    <h2>Exceptional Health Care for Woman</h2>
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                       sed do eiusmod tempor incididunt ut labore et dolore magna
@@ -77,7 +77,7 @@ const HeroSlider: React.FC = () => {
                         height={500}
                       />
                     </div>
-                    <h1>Caring Health is Important Than All</h1>
+                    <h2>Caring Health is Important Than All</h2>
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                       sed do eiusmod tempor incididunt ut labore et dolore magna
@@ -116,7 +116,7 @@ const HeroSlider: React.FC = () => {
                         height={500}
                       />
                     </div>
-                    <h1>We Offer Highly Treatments</h1>
+                    <h2>We Offer Highly Treatments</h2>
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                       sed do eiusmod tempor incididunt ut labore et dolore magna
