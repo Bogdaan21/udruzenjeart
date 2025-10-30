@@ -25,15 +25,46 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Udruženje ART Crne Gore",
+  metadataBase: new URL("https://udruzenjeart.me"),
+  title: {
+    default: "Udruženje ART Crne Gore",
+    template: "%s | Udruženje ART Crne Gore",
+  },
   description:
-    "Zvanični sajt Udruženja anestetičara, tehničara intenzivne njege i transfuzije Crne Gore.",
-icons: {
-  icon: "/favicon_io/favicon.ico",
-  shortcut: "/favicon_io/favicon-32x32.png",
-  apple: "/favicon_io/apple-touch-icon.png",
-},
-manifest: "/favicon_io/site.webmanifest",
+    "Zvanični sajt Udruženja anestezičara, tehničara intenzivne njege i transfuzije Crne Gore. Edukacije, kongresi i povezivanje stručnjaka iz oblasti zdravstva.",
+  keywords: [
+    "Udruženje ART",
+    "anestezičari Crna Gora",
+    "intenzivna njega",
+    "transfuzija",
+    "zdravstvo Crna Gora",
+    "kongres medicinara",
+  ],
+  openGraph: {
+    type: "website",
+    url: "https://udruzenjeart.me",
+    title: "Udruženje ART Crne Gore",
+    description:
+      "Udruženje anestezičara, tehničara intenzivne njege i transfuzije Crne Gore — profesionalno udruženje posvećeno unapređenju znanja i zdravstvene njege.",
+    siteName: "Udruženje ART Crne Gore",
+    images: [
+      {
+        url: "/images/og-cover.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Udruženje ART Crne Gore – Kongres i edukacija",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Udruženje ART Crne Gore",
+    description: "Zvanični sajt Udruženja anestezičara, tehničara intenzivne njege i transfuzije Crne Gore.",
+    images: ["/images/og-cover.jpg"],
+  },
+  alternates: {
+    canonical: "https://udruzenjeart.me",
+  },
 };
 
 export default function RootLayout({
@@ -48,10 +79,7 @@ export default function RootLayout({
         <GoTop />
 
         {/* ✅ Google Analytics (GA4) */}
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-5L0ZJ6EVNQ"
-          strategy="afterInteractive"
-        />
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-5L0ZJ6EVNQ" strategy="afterInteractive" />
         <Script id="google-analytics" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];

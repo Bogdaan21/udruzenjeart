@@ -97,7 +97,7 @@ const Footer: React.FC = () => {
               <div className="footer-item text-center">
                 <Image
                   src="/images/esn.png"
-                  alt="ESN Logo"
+                  alt="European specialist nurses organisation"
                   width={180}
                   height={80}
                   className="img-fluid"

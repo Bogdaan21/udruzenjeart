@@ -30,7 +30,7 @@ const MainBanner: React.FC = () => {
                         <div className="common-btn">
                           <Image
                             src="/images/esn.png"
-                            alt="ESN Logo"
+                            alt="European specialist nurses organisation"
                             width={180}
                             height={80}
                             className="img-fluid"
@@ -58,7 +58,7 @@ const MainBanner: React.FC = () => {
                         <div className="common-btn">
                           <Image
                             src="/images/esn.png"
-                            alt="ESN Logo"
+                            alt="European specialist nurses organisation"
                             width={180}
                             height={80}
                             className="img-fluid"

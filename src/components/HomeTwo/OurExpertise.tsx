@@ -96,7 +96,7 @@ const OurExpertise: React.FC = () => {
               >
                 <Image
                   src="/images/about-team.jpg"
-                  alt={language === "en" ? "Our Mission" : "Naša misija"}
+                  alt={language === "en" ? "About ART Association" : "O Udruženju ART"}
                   width={845}
                   height={850}
                 />

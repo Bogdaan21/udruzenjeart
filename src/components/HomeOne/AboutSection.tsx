@@ -45,7 +45,7 @@ const AboutSection: React.FC = () => {
             {/* RIGHT CONTENT */}
             <div className="col-lg-6">
               <div className="about-item about-right">
-                <Image src="/images/about-shape1.png" alt="Decoration" width={556} height={712} />
+                <Image src="/images/about-shape1.png" alt="Duško Stijepović" width={556} height={712} />
 
                 {language === "en" ? (
                   <>

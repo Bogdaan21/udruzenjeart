@@ -12,7 +12,12 @@ const ServiceDetailsContent: React.FC = () => {
       <div className="service-details-area ptb-100">
         <div className="container">
           <div className="services-details-img">
-            <Image src="/images/princess-bar1.jpg" alt="Service Details" width={1920} height={1000} />
+            <Image
+              src="/images/princess-bar1.jpg"
+              alt={language === "en" ? "About ART Association" : "O Udruženju ART"}
+              width={1920}
+              height={1000}
+            />
 
             {language === "en" ? (
               <>

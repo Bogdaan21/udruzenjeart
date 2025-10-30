@@ -102,7 +102,12 @@ const AppointmentForm: React.FC = () => {
             <div className="col-lg-12">
               <div className="appointment-item appointment-item-two">
                 <div className="appointment-shape">
-                  <Image src="/images/hart-img1.png" alt="Shape" width={360} height={264} />
+                  <Image
+                    src="/images/hart-img1.png"
+                    alt={language === "en" ? "About ART Association" : "O Udruženju ART"}
+                    width={360}
+                    height={264}
+                  />
                 </div>
                 {language === "en" ? <h2>Submit Your Application</h2> : <h2>Pošaljite Vašu prijavu</h2>}{" "}
                 <span>
