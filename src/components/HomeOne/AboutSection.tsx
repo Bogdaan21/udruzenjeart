@@ -28,15 +28,12 @@ const AboutSection: React.FC = () => {
             {/* LEFT IMAGE */}
             <div className="col-lg-6">
               <div className="about-item">
-                <div className="about-left">
+                <div className="about-left"> 
                   <Image
-                    src="/images/d-home.jpg"
+                    src="/images/congress-1.jpg"
                     alt={language === "en" ? "About ART Association" : "O Udruženju ART"}
                     width={626}
                     height={552}
-                    style={{
-                      filter: "brightness(70%)",
-                    }}
                   />
                 </div>
               </div>

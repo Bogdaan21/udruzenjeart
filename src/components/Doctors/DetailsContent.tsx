@@ -1,12 +1,15 @@
 "use client";
 
-import React from "react";  
+import React from "react";
 import Sidebar from "./Sidebar";
+import { useLanguage } from "@/context/LanguageContext";
 
 const DetailsContent: React.FC = () => {
+  const { language } = useLanguage();
+
   return (
     <>
-      <div className="doctor-details-area pt-100 pb-70">
+      <div className="doctor-details-area">
         <div className="container">
           <div className="row">
             <div className="col-lg-5">
@@ -17,72 +20,82 @@ const DetailsContent: React.FC = () => {
               <div className="doctor-details-item">
                 <div className="doctor-details-right">
                   <div className="doctor-details-biography">
-                    <h3>Dr. Sarah Taylor (Neurosurgeon)</h3>
-                    <p>MBBS in Neurology, PHD in Neurosurgeon</p>
+                    {language === "en" ? (
+                      <>
+                        <h2>Hotel Princess, Bar – Comfort by the Sea</h2>
+                        <p>Montenegro, Bar</p>
+                      </>
+                    ) : (
+                      <>
+                        <h2>Hotel Princess, Bar – Udobnost uz more</h2>
+                        <p>Crna Gora, Bar</p>
+                      </>
+                    )}
                   </div>
 
                   <div className="doctor-details-biography">
-                    <h3>Biography</h3>
-
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      Duis aute irure dolor in reprehenderit in voluptate velit
-                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                      sint occaecat cupidatat non proident, sunt in culpa qui
-                      officia deserunt mollit anim id est laborum.
-                    </p>
-
-                    <p>
-                      Sed ut perspiciatis unde omnis iste natus error sit
-                      voluptatem accusantium doloremque laudantium, totam rem
-                      aperiam, eaque ipsa quae ab illo inventore veritatis et
-                      quasi architecto beatae vitae dicta sunt explicabo. Nemo
-                      enim ipsam voluptatem quia voluptas sit aspernatur aut
-                      odit aut fugit, sed quia consequuntur magni dolores eos
-                      qui ratione voluptatem sequi nesciunt.
-                    </p>
-
-                    <p>
-                      But I must explain to you how all this mistaken idea of
-                      denouncing pleasure and praising pain was born and I will
-                      give you a complete account of the system, and expound the
-                      actual teachings of the great explorer of the truth, the
-                      master-builder of human happiness. No one rejects,
-                      dislikes, or avoids pleasure itself, because it is
-                      pleasure, but because those who do not know how to pursue
-                      pleasure rationally encounter consequences that are
-                      extremely painful.
-                    </p>
-
-                    <p></p>
-                  </div>
-
-                  <div className="doctor-details-biography">
-                    <h3>Education</h3>
-                    <ul>
-                      <li>
-                        PHD Degree in Neurology at University of UCLan School of
-                        Medicine Preston (2006)
-                      </li>
-                      <li>
-                        Master of Neurosurgery at University of University of
-                        Exeter Medical School Exeter (2002)
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div className="doctor-details-biography">
-                    <h3>Experience</h3>
-                    <p>
-                      At vero eos et accusamus et iusto odio dignissimos ducimus
-                      qui blanditiis praesentium voluptatum deleniti atque
-                      corrupti quos dolores et quas molestias excepturi sint
-                      occaecati cupiditate non provident, similique sunt in
-                      culpa.
-                    </p>
+                    {language === "en" ? (
+                      <>
+                        <p>
+                          Nestled along the Adriatic coast, Hotel Princess in Bar offers a unique blend of elegance,
+                          comfort, and Mediterranean charm. With its stunning sea view, modern rooms, and professional
+                          service, the hotel is an ideal choice for guests seeking both relaxation and luxury. Whether
+                          you are here for a conference, professional event, or a family vacation, Hotel Princess
+                          ensures a pleasant and memorable stay.
+                        </p>
+                        <p>
+                          Guests can enjoy a rich gastronomic offer at the hotel restaurant, a relaxing wellness & spa
+                          center, and an outdoor pool overlooking the sea. The hotel also provides modern conference
+                          halls, free parking, and a short walking distance to the city promenade and marina. Experience
+                          Bar at its best – where comfort meets the Adriatic breeze.
+                        </p>
+                        <p>
+                          Hotel Princess – the perfect combination of professional hospitality and Mediterranean
+                          serenity.
+                        </p>
+                        <p>
+                          For more information or reservations, visit the official website:{" "}
+                          <a
+                            href="https://www.hotelprincess.me/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="hotel-link"
+                          >
+                            www.hotelprincess.me
+                          </a>
+                        </p>
+                      </>
+                    ) : (
+                      <>
+                        <p>
+                          Smješten uz jadransku obalu, Hotel Princess u Baru nudi jedinstven spoj elegancije,
+                          udobnosti i mediteranskog šarma. Sa predivnim pogledom na more, modernim sobama i
+                          profesionalnom uslugom, hotel je idealan izbor za goste koji traže opuštanje i luksuz.
+                          Bilo da ste ovdje zbog kongresa, stručnog događaja ili porodičnog odmora, Hotel Princess
+                          garantuje prijatan i nezaboravan boravak.
+                        </p>
+                        <p>
+                          Gosti mogu uživati u bogatoj gastronomskoj ponudi hotelskog restorana, wellness & spa centru,
+                          kao i bazenu na otvorenom sa pogledom na more. Hotel posjeduje i moderne kongresne sale,
+                          besplatan parking i nalazi se na nekoliko minuta šetnje od gradske promenade i marine.
+                          Doživite Bar u njegovom najboljem izdanju – gdje se udobnost susreće sa mirisom Jadrana.
+                        </p>
+                        <p>
+                          Hotel Princess – savršen spoj profesionalnog gostoprimstva i mediteranskog mira.
+                        </p>
+                        <p>
+                          Za više informacija ili rezervacije posjetite zvanični sajt:{" "}
+                          <a
+                            href="https://www.hotelprincess.me/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="hotel-link"
+                          >
+                            www.hotelprincess.me
+                          </a>
+                        </p>
+                      </>
+                    )}
                   </div>
                 </div>
               </div>

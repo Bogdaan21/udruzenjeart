@@ -824,9 +824,9 @@
   }
   /*-- End Page Title --*/
   /*-- Doctor Details --*/
-  .doctor-details-item img {
+  /* .doctor-details-item img {
     margin-bottom: 30px;
-  }
+  } */
   .doctor-details-item .doctor-details-contact {
     padding: 0 15px;
     margin-bottom: 30px;
@@ -2212,9 +2212,9 @@
   }
   /*-- End Page Title --*/
   /*-- Doctor Details --*/
-  .doctor-details-item img {
+  /* .doctor-details-item img {
     margin-bottom: 40px;
-  }
+  } */
   .doctor-details-item .doctor-details-contact {
     margin-bottom: 35px;
   }

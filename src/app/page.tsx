@@ -29,12 +29,18 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/images/og-banner.jpg", // možeš kasnije dodati neku banner sliku
+        url: "https://udruzenjeart.me/images/insta-logo-white.png", // ✅ apsolutna adresa
         width: 1200,
         height: 630,
         alt: "Udruženje ART Crne Gore",
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Udruženje ART Crne Gore",
+    description: "Zvanični sajt Udruženja anestezičara, tehničara intenzivne njege i transfuzije Crne Gore.",
+    images: ["https://udruzenjeart.me/images/insta-logo-white.png"], // ✅ ista slika i za Twitter / Viber
   },
 };
 

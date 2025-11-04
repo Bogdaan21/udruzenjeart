@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     siteName: "Udruženje ART Crne Gore",
     images: [
       {
-        url: "/images/og-cover.jpg",
+        url: "/images/insta-logo-white.png",
         width: 1200,
         height: 630,
         alt: "Udruženje ART Crne Gore – Kongres i edukacija",
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Udruženje ART Crne Gore",
     description: "Zvanični sajt Udruženja anestezičara, tehničara intenzivne njege i transfuzije Crne Gore.",
-    images: ["/images/og-cover.jpg"],
+    images: ["/images/insta-logo-white.png"],
   },
   alternates: {
     canonical: "https://udruzenjeart.me",
