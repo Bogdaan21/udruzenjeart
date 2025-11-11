@@ -274,29 +274,62 @@ const AppointmentForm: React.FC = () => {
                       </button>
                       {language === "en" ? (
                         <p className="mt-3">
-                          For accommodation during the event, we recommend{" "}
+                          Rooms can be booked directly via this{" "}
+                          <a
+                            href="https://bit.ly/art2026"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            style={{ fontWeight: "bold", color: "#007bff" }}
+                          >
+                            LINK
+                          </a>
+                          , through{" "}
                           <a
                             href="https://www.hotelprincess.me/"
                             target="_blank"
                             rel="noopener noreferrer"
                             style={{ fontWeight: "bold", color: "#007bff" }}
                           >
-                            Hotel Princess
+                            www.hotelprincess.me
                           </a>{" "}
-                          in Bar. For information and reservations, please contact the hotel directly.
+                          using promo code <strong>art2026</strong>, or by email at{" "}
+                          <a
+                            href="mailto:reservations@hotelprincess.me"
+                            style={{ fontWeight: "bold", color: "#007bff" }}
+                          >
+                            reservations@hotelprincess.me
+                          </a>{" "}
+                          <br />
+                          (subject: “Udruženje ART 2026”).
                         </p>
                       ) : (
                         <p className="mt-3">
-                          Za smještaj tokom događaja preporučujemo{" "}
+                          Sobe se mogu rezervisati direktno putem ovog{" "}
+                          <a
+                            href="https://bit.ly/art2026"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            style={{ fontWeight: "bold", color: "#007bff" }}
+                          >
+                            LINK-A
+                          </a>
+                          , preko{" "}
                           <a
                             href="https://www.hotelprincess.me/"
                             target="_blank"
                             rel="noopener noreferrer"
                             style={{ fontWeight: "bold", color: "#007bff" }}
                           >
-                            Hotel Princess
+                            www.hotelprincess.me
                           </a>{" "}
-                          u Baru. Za informacije i rezervacije kontaktirajte direktno hotel.
+                          unosom promo koda <strong>art2026</strong>, ili putem e-maila{" "}
+                          <a
+                            href="mailto:reservations@hotelprincess.me"
+                            style={{ fontWeight: "bold", color: "#007bff" }}
+                          >
+                            reservations@hotelprincess.me
+                          </a>{" "}
+                          <br /> (naslov: „Udruženje ART 2026“).
                         </p>
                       )}
                     </div>
