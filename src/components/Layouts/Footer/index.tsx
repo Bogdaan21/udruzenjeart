@@ -95,19 +95,7 @@ const Footer: React.FC = () => {
             {/* ✅ Partner sekcija */}
             <div className="col-sm-6 col-lg-3">
               <div className="footer-item text-center">
-                <Image
-                  src="/images/esn.png"
-                  alt="European specialist nurses organisation"
-                  width={180}
-                  height={80}
-                  className="img-fluid"
-                  style={{
-                    background: "white",
-                    objectFit: "contain",
-                    marginTop: "10px",
-                    filter: "drop-shadow(0 2px 6px rgba(0,0,0,0.1))",
-                  }}
-                />
+
               </div>
             </div>
           </div>

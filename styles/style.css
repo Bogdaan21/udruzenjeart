@@ -501,7 +501,7 @@ button:focus {
   background-repeat: no-repeat;
   background-color: #ffffff;
   padding-top: 45px;
-  padding-bottom: 15px;
+  padding-bottom: 45px;
   border-radius: 8px;
   box-shadow: 0px 0px 30px 0px rgba(221, 221, 221, 0.6509803922);
   margin-top: -140px;
@@ -510,7 +510,7 @@ button:focus {
 }
 
 .counter-item {
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
   text-align: center;
 }
 .counter-item i {
