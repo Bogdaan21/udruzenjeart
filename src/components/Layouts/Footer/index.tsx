@@ -73,12 +73,18 @@ const Footer: React.FC = () => {
                   <h3>{language === "en" ? "Follow Us" : "Pratite nas"}</h3>
                   <ul>
                     <li>
-                      <a href="https://www.facebook.com/people/Udruzenje-anesteti%C4%8Daratehni%C4%8Dara-intenzivne-njege-i-transfuzije-Crne-Gore/61574532365801/?rdid=sNcR4PikCshjW2WM&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F16rosXR6xN%2F" target="_blank">
+                      <a
+                        href="https://www.facebook.com/people/Udruzenje-anesteti%C4%8Daratehni%C4%8Dara-intenzivne-njege-i-transfuzije-Crne-Gore/61574532365801/?rdid=sNcR4PikCshjW2WM&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F16rosXR6xN%2F"
+                        target="_blank"
+                      >
                         <i className="icofont-facebook"></i> Facebook
                       </a>
                     </li>
                     <li>
-                      <a href="https://www.instagram.com/udruzenjeart/?igsh=MWVmajQ3ZHBlcGlsOQ%3D%3D&utm_source=qr#" target="_blank">
+                      <a
+                        href="https://www.instagram.com/udruzenjeart/?igsh=MWVmajQ3ZHBlcGlsOQ%3D%3D&utm_source=qr#"
+                        target="_blank"
+                      >
                         <i className="icofont-instagram"></i> Instagram
                       </a>
                     </li>
@@ -94,8 +100,42 @@ const Footer: React.FC = () => {
 
             {/* ✅ Partner sekcija */}
             <div className="col-sm-6 col-lg-3">
-              <div className="footer-item text-center">
+              <div className="footer-item text-center footer-logos-bg">
+                <div className="">
+                  <div className="counter-item">
+                    <Link href="https://ifna.site/" target="_blank" rel="noopener noreferrer">
+                      <Image
+                        src="/images/esn.png"
+                        alt="European specialist nurses organisation"
+                        width={180}
+                        height={80}
+                        className="img-fluid img-logos"
+                        style={{
+                          objectFit: "contain",
+                          filter: "drop-shadow(0 2px 6px rgba(0,0,0,0.1))",
+                        }}
+                      />
+                    </Link>
+                  </div>
+                </div>
 
+                <div className="">
+                  <div className="counter-item">
+                    <Link href="https://esno.org/" target="_blank" rel="noopener noreferrer">
+                      <Image
+                        src="/images/ifna.png"
+                        alt="European specialist nurses organisation"
+                        width={180}
+                        height={80}
+                        className="img-fluid img-logos"
+                        style={{
+                          objectFit: "contain",
+                          filter: "drop-shadow(0 2px 6px rgba(0,0,0,0.1))",
+                        }}
+                      />{" "}
+                    </Link>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

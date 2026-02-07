@@ -102,6 +102,12 @@ const MainBanner: React.FC = () => {
           color: rgba(255, 255, 255, 0.9);
         }
 
+        @media (max-width: 768px) {
+        .slider-text h2 {
+          font-size: 30px;
+          }
+        }
+
         .slider-text p {
           font-size: 18px;
           color: rgba(255, 255, 255, 0.9);
@@ -112,6 +118,7 @@ const MainBanner: React.FC = () => {
           .slider-text {
             text-align: center;
             margin-bottom: 40px;
+            font-size: 8px;
           }
 
           .slider-text h1 {

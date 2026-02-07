@@ -3890,3 +3890,61 @@ input[type=number] {
 .sticky-top {
   z-index: 10 !important;
 }
+
+/* Desktop */
+.img-logos {
+  margin-right: 20px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .img-logos {
+    margin-right: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+/* 🥇 GOLD SPONSOR */
+.gold-sponsor {
+  position: relative;
+  padding: 25px 15px;
+  border-radius: 12px;
+  border: 2px solid #d4af37; /* zlatna */
+  background: linear-gradient(
+    180deg,
+    rgba(255, 215, 0, 0.08),
+    rgba(255, 215, 0, 0.02)
+  );
+  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.25);
+  transform: scale(1.05);
+}
+
+/* 🏷️ badge */
+.gold-badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #d4af37;
+  color: #000;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* malo jači logo */
+.gold-sponsor img {
+  filter: drop-shadow(0 4px 10px rgba(212, 175, 55, 0.35));
+}
+
+.footer-logos-bg {
+  background: rgba(255, 255, 255, 0.88);
+  border-radius: 10px;
+  padding: 25px 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(4px);
+}
