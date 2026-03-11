@@ -94,7 +94,7 @@ const Stats: React.FC = () => {
               </div>
             </div>
 
-            <div className="col-sm-6 col-md-3 col-lg-3">
+            {/* <div className="col-sm-6 col-md-3 col-lg-3">
               <div className="counter-item">
                 <Link href="https://www.iskysoft.us/" target="_blank" rel="noopener noreferrer">
                   <Image
@@ -110,7 +110,7 @@ const Stats: React.FC = () => {
                   />{" "}
                 </Link>
               </div>
-            </div>
+            </div> */}
 
             <div className="col-sm-6 col-md-3 col-lg-3">
               <div className="counter-item">

@@ -72,7 +72,7 @@ const AppointmentForm: React.FC = () => {
           title: formData.get("title"),
           file_url: fileURL,
         },
-        "66z6YyCaQIJcC0X2G"
+        "66z6YyCaQIJcC0X2G",
       );
 
       setPopupMessage(language === "en" ? "Application successfully submitted!" : "Prijava je uspješno poslata!");
@@ -257,6 +257,16 @@ const AppointmentForm: React.FC = () => {
                             name="attachment"
                             accept=".pdf"
                             required={type === "Predavač"}
+                            onChange={(e) => {
+                              const file = e.target.files?.[0];
+
+                              if (file && file.type !== "application/pdf") {
+                                alert(
+                                  language === "en" ? "Only PDF files are allowed." : "Dozvoljeni su samo PDF fajlovi.",
+                                );
+                                e.target.value = "";
+                              }
+                            }}
                           />
                         </div>
                       </div>
@@ -269,8 +279,8 @@ const AppointmentForm: React.FC = () => {
                             ? "Uploading..."
                             : "Otpremanje..."
                           : language === "en"
-                          ? "Submit Application"
-                          : "Pošalji prijavu"}
+                            ? "Submit Application"
+                            : "Pošalji prijavu"}
                       </button>
                       {language === "en" ? (
                         <p className="mt-3">
