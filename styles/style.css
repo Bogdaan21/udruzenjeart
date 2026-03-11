@@ -695,6 +695,7 @@ button:focus {
   padding-bottom: 25px;
   padding-left: 15px;
   padding-right: 15px;
+  border-radius: 10px;
 }
 .service-item .service-front {
   transition: 0.5s all ease;

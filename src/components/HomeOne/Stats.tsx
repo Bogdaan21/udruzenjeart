@@ -14,7 +14,12 @@ const Stats: React.FC = () => {
         <div className="container">
           <div
             className="row counter-bg"
-            style={{ backgroundImage: `url(/images/map-bg.png)`, justifyContent: `center`, alignItems: `center` }}
+            style={{
+              backgroundImage: `url(/images/map-bg.png)`,
+              justifyContent: `center`,
+              alignItems: `center`,
+              gap: "30px",
+            }}
           >
             <div className="col-sm-6 col-md-3 col-lg-3">
               <div className="counter-item">
@@ -59,6 +64,60 @@ const Stats: React.FC = () => {
                   <Image
                     src="/images/drager.png"
                     alt="Drager"
+                    width={180}
+                    height={80}
+                    className="img-fluid img-logos"
+                    style={{
+                      objectFit: "contain",
+                      filter: "drop-shadow(0 2px 6px rgba(0,0,0,0.1))",
+                    }}
+                  />{" "}
+                </Link>
+              </div>
+            </div>
+
+            <div className="col-sm-6 col-md-3 col-lg-3">
+              <div className="counter-item">
+                <Link href="https://farmalab.me/" target="_blank" rel="noopener noreferrer">
+                  <Image
+                    src="/images/farmalab.png"
+                    alt="Salus"
+                    width={180}
+                    height={80}
+                    className="img-fluid img-logos"
+                    style={{
+                      objectFit: "contain",
+                      filter: "drop-shadow(0 2px 6px rgba(0,0,0,0.1))",
+                    }}
+                  />{" "}
+                </Link>
+              </div>
+            </div>
+
+            <div className="col-sm-6 col-md-3 col-lg-3">
+              <div className="counter-item">
+                <Link href="https://www.iskysoft.us/" target="_blank" rel="noopener noreferrer">
+                  <Image
+                    src="/images/iskysoft.svg"
+                    alt="Iskysoft"
+                    width={180}
+                    height={80}
+                    className="img-fluid img-logos"
+                    style={{
+                      objectFit: "contain",
+                      filter: "drop-shadow(0 2px 6px rgba(0,0,0,0.1))",
+                    }}
+                  />{" "}
+                </Link>
+              </div>
+            </div>
+
+            <div className="col-sm-6 col-md-3 col-lg-3">
+              <div className="counter-item">
+                <Link href="https://www.farmont.me/" target="_blank" rel="noopener noreferrer">
+                  <Image
+                    src="/images/farmont.png"
+                    alt="Farmont"
                     width={180}
                     height={80}
                     className="img-fluid img-logos"
