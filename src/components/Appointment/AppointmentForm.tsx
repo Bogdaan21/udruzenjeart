@@ -100,7 +100,10 @@ const AppointmentForm: React.FC = () => {
         <div className="container">
           <div className="row justify-content-center appointment-wrap-two">
             <div className="col-lg-12">
-              <div className="appointment-item appointment-item-two">
+              <div style={{ textAlign: "center", padding: "40px 20px" }}>
+                <h2>{language === "en" ? "Application deadline has expired" : "Rok za prijave je istekao"}</h2>
+              </div>
+              {/* <div className="appointment-item appointment-item-two">
                 <div className="appointment-shape">
                   <Image
                     src="/images/hart-img1.png"
@@ -118,7 +121,7 @@ const AppointmentForm: React.FC = () => {
                 <div className="appointment-form">
                   <form ref={formRef} onSubmit={sendEmail}>
                     <div className="row">
-                      {/* ✅ Application Type */}
+
                       <div className="col-lg-6">
                         <div className="form-group">
                           <i className="icofont-users-alt-4"></i>
@@ -137,7 +140,7 @@ const AppointmentForm: React.FC = () => {
                           </select>
                         </div>
                       </div>
-                      {/* Full Name */}
+
                       <div className="col-lg-6">
                         <div className="form-group">
                           <i className="icofont-business-man-alt-1"></i>
@@ -152,7 +155,7 @@ const AppointmentForm: React.FC = () => {
                         </div>
                       </div>
 
-                      {/* Email */}
+
                       <div className="col-lg-6">
                         <div className="form-group">
                           <i className="icofont-ui-message"></i>
@@ -167,7 +170,7 @@ const AppointmentForm: React.FC = () => {
                         </div>
                       </div>
 
-                      {/* Phone */}
+
                       <div className="col-lg-6">
                         <div className="form-group">
                           <i className="icofont-ui-call"></i>
@@ -182,7 +185,7 @@ const AppointmentForm: React.FC = () => {
                         </div>
                       </div>
 
-                      {/* Clinic */}
+
                       <div className="col-lg-6">
                         <div className="form-group">
                           <i className="icofont-hospital"></i>
@@ -201,7 +204,6 @@ const AppointmentForm: React.FC = () => {
                         </div>
                       </div>
 
-                      {/* Country */}
                       <div className="col-lg-6">
                         <div className="form-group">
                           <i className="icofont-globe"></i>
@@ -216,7 +218,7 @@ const AppointmentForm: React.FC = () => {
                         </div>
                       </div>
 
-                      {/* Association */}
+
                       <div className="col-lg-6">
                         <div className="form-group">
                           <i className="icofont-users"></i>
@@ -231,7 +233,7 @@ const AppointmentForm: React.FC = () => {
                         </div>
                       </div>
 
-                      {/* Topic */}
+
                       <div className="col-lg-6">
                         <div className="form-group">
                           <i className="icofont-paper"></i>
@@ -246,7 +248,7 @@ const AppointmentForm: React.FC = () => {
                         </div>
                       </div>
 
-                      {/* Attachment */}
+
                       <div className="col-lg-6">
                         <div className="form-group">
                           <i className="icofont-file-pdf"></i>
@@ -345,7 +347,7 @@ const AppointmentForm: React.FC = () => {
                     </div>
                   </form>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
