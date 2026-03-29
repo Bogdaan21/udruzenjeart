@@ -13,6 +13,10 @@ export const useMenus = () => {
       link: "/about/",
     },
     {
+      label: language === "en" ? "Agenda" : "Agenda",
+      link: "/agenda/",
+    },
+    {
       label: language === "en" ? "Congress" : "Kongres",
       link: "/congress/",
     },

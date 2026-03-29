@@ -44,6 +44,9 @@ const MainBanner: React.FC = () => {
                           <Link href="/congress" className="cmn-btn-right">
                             Congress
                           </Link>
+                          <Link href="/agenda" className="cmn-btn-left">
+                            Agenda
+                          </Link>
                         </div>
                       </>
                     ) : (
@@ -61,6 +64,9 @@ const MainBanner: React.FC = () => {
                         <div className="common-btn">
                           <Link href="/congress" className="cmn-btn-right">
                             Kongres
+                          </Link>
+                          <Link href="/agenda" className="cmn-btn-left">
+                            Agenda
                           </Link>
                         </div>
                       </>

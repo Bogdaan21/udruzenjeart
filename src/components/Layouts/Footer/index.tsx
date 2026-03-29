@@ -52,6 +52,9 @@ const Footer: React.FC = () => {
                     <li>
                       <Link href="/about">{language === "en" ? "About" : "O udruženju"}</Link>
                     </li>
+                                        <li>
+                      <Link href="/agenda">{language === "en" ? "Agenda" : "Agenda"}</Link>
+                    </li>
                     <li>
                       <Link href="/congress">{language === "en" ? "Congress" : "Kongres"}</Link>
                     </li>
