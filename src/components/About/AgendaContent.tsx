@@ -119,7 +119,7 @@ const AboutContent: React.FC = () => {
           {
             time: "",
             title:
-              "prof.dr. Vedrana Vejzović, Univerzitet Malmo, Švedska <br/> doc.dr.sc. Adriano Friganović, FESNO, FFNMCRSI, predsjednik ESNO",
+              "doc.dr.sc. Vedrana Vejzović, Univerzitet Malmo, Švedska <br/> doc.dr.sc. Adriano Friganović, FESNO, FFNMCRSI, predsjednik ESNO",
           },
 
           { time: "13:30 – 15:00", title: "Pauza za ručak" },
