@@ -4,6 +4,8 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useLanguage } from "@/context/LanguageContext";
+import QRCodeComponent from "@/components/QR/QRCodeComponent";
+
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -61,9 +63,9 @@ const Footer: React.FC = () => {
                     <li>
                       <Link href="/contact">{language === "en" ? "Contact" : "Kontakt"}</Link>
                     </li>
-                    <li>
+                    {/* <li>
                       <Link href="/appointment">{language === "en" ? "Application" : "Prijava"}</Link>
-                    </li>
+                    </li> */}
                   </ul>
                 </div>
               </div>
@@ -96,6 +98,9 @@ const Footer: React.FC = () => {
                         <i className="icofont-linkedin"></i> LinkedIn
                       </a>
                     </li> */}
+                    <li>
+                      <QRCodeComponent />
+                    </li>
                   </ul>
                 </div>
               </div>

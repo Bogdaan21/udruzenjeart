@@ -2,10 +2,11 @@
 
 import React, { useState } from "react";
 import { useLanguage } from "@/context/LanguageContext";
+import RasporedAgenda from "@/components/About/RasporedAgenda";
 
 const AboutContent: React.FC = () => {
   const { language } = useLanguage();
-  const [activeDay, setActiveDay] = useState<"day1" | "day2" | "day3">("day1");
+  const [activeDay, setActiveDay] = useState<"day1" | "day2" | "day3" | "rasporedAgenda">("day1");
 
   const day1Agenda =
     language === "en"
@@ -23,9 +24,8 @@ const AboutContent: React.FC = () => {
           },
           {
             time: "",
-            title: "Doc. dr. sc. Adriano Friganović, FESNO, FFNMCRSI",
+            title: "Doc. dr. sc. Adriano Friganović, FESNO, FFNMCRSI. <br/> President of ESNO",
           },
-          { time: "", title: "President of ESNO" },
           { time: "20:00 – 24:00", title: "Cocktail dinner" },
         ]
       : [
@@ -51,80 +51,99 @@ const AboutContent: React.FC = () => {
   const day2Agenda =
     language === "en"
       ? [
-          { time: "09:00 – 10:00", title: "Registration and sponsor visit" },
+          { time: "09:00 – 10:00", title: "Participant registration and sponsor exhibition" },
+
+          { time: "10:00 – 11:00", title: "Session 1 – Hall 1" },
+          { time: "10:00 – 11:00", title: "Session 2 – Hall 2" },
+
           {
-            time: "10:00 – 11:30",
-            title: "Session 1 – Anesthesia: modern approaches and clinical practice",
+            time: "11:00 – 11:30",
+            title: "Workshop – Optimization of IV therapy using Nexiva and BD solutions (Hall 2)",
           },
+
           { time: "11:30 – 12:00", title: "Coffee break" },
+
           {
             time: "12:00 – 12:30",
-            title: "Lecture: “Development of nursing in Montenegro – between tradition and modern practice”",
+            title:
+              "Lecture: Development of nursing in Montenegro – between tradition and modern practice (M.Sc. Maja Keković, Center for Science, Clinical Center of Montenegro)",
           },
-          { time: "", title: "mr.sc. Maja Keković, Science Center KCCG" },
+
           {
             time: "12:30 – 13:30",
             title:
-              "Panel discussion: “Nursing in the process of change, specialization and impact on the healthcare system”",
+              "Panel discussion: Nursing in the process of change, specialization, and its impact on the healthcare system (Prof. Dr. Vedrana Vejzović, Malmö University, Sweden; Assoc. Prof. Adriano Friganović, ESNO President)",
           },
-          {
-            time: "",
-            title: "prof.dr. Vedrana Vejzović, Malmö University, Sweden",
-          },
-          {
-            time: "",
-            title: "doc.dr.sc. Adriano Friganović, FESNO, FFNMCRSI, President of ESNO",
-          },
+
           { time: "13:30 – 15:00", title: "Lunch break" },
+
           {
             time: "15:00 – 16:00",
             title:
-              "Workshop-round table: Gordana Dragošev, president of UINARS, head nurse of the Clinic for Anesthesia, Reanimation and Intensive Care UKC Niš: “Stress and how to overcome it – red zones within us”",
+              "Workshop round table: Stress and how to overcome it – the red zones within us (Gordana Dragošević, President of UINARS, Head Nurse, Clinic for Anesthesia, Resuscitation and Intensive Care, University Clinical Center Niš)",
           },
-          { time: "16:00 – 17:00", title: "Small hall 1: Workshop 1" },
+
           {
-            time: "16:00 – 18:00",
-            title: "Small hall 2: Session 2 – Intensive care – current topics",
+            time: "16:00 – 16:45",
+            title: "Workshop – Advanced resuscitation and modern solutions for safe intubation (Flexicare) – Hall 2",
           },
-          { time: "17:00 – 18:00", title: "Small hall 1: Workshop 2" },
-          { time: "20:00", title: "Ceremonial dinner" },
+
+          { time: "16:45 – 17:40", title: "Session 3 – Hall 2" },
+
+          { time: "16:00 – 17:40", title: "Session 4 – Hall 1" },
+
+          { time: "20:00", title: "Gala dinner" },
         ]
       : [
-          { time: "09:00 – 10:00", title: "Registracija i obilazak sponzora" },
+          { time: "09:00 – 10:00", title: "Registracija učesnika i obilazak sponzora" },
+
+          { time: "10:00 – 11:00", title: "Sesija 1 – Sala 1" },
+          { time: "10:00 – 11:00", title: "Sesija 2 – Sala 2" },
+
           {
-            time: "10:00 – 11:30",
-            title: "Sesija 1 – Anestezija: savremeni pristupi i klinička praksa",
+            time: "11:00 – 11:30",
+            title: "Radionica: Optimizacija IV terapije uz Nexivu i BD rješenja (Sala 2)",
           },
+
           { time: "11:30 – 12:00", title: "Kafe pauza" },
+
           {
             time: "12:00 – 12:30",
-            title: "Predavanje: „Razvoj sestrinstva u Crnoj Gori – između tradicije i savremene prakse”",
+            title: "Predavanje: Razvoj sestrinstva u Crnoj Gori – između tradicije i savremene prakse",
           },
           { time: "", title: "mr.sc. Maja Keković, Centar za nauku KCCG" },
+
           {
             time: "12:30 – 13:30",
-            title: "Panel diskusija: „Sestrinstvo u procesu promjena, specijalizacija i uticaj na zdravstveni sistem”",
+            title: "Panel diskusija: Sestrinstvo u procesu promjena, specijalizacija i uticaj na zdravstveni sistem",
           },
           {
             time: "",
-            title: "prof.dr. Vedrana Vejzović, Univerzitet Malmö, Švedska",
+            title:
+              "prof.dr. Vedrana Vejzović, Univerzitet Malmo, Švedska <br/> doc.dr.sc. Adriano Friganović, FESNO, FFNMCRSI, predsjednik ESNO",
           },
-          {
-            time: "",
-            title: "doc.dr.sc. Adriano Friganović, FESNO, FFNMCRSI, Predsjednik ESNO",
-          },
+
           { time: "13:30 – 15:00", title: "Pauza za ručak" },
+
           {
             time: "15:00 – 16:00",
-            title:
-              "Radionica-okrugli sto: Gordana Dragošev, predsjednica UINARS, glavna sestra klinike za anesteziju, reanimaciju i intenzivnu njegu UKC Niš: „Stres i kako ga prevazići – crvene zone u nama”",
+            title: "Radionica – okrugli sto: Stres i kako ga prevazići – crvene zone u nama",
           },
-          { time: "16:00 – 17:00", title: "Mala sala 1: Radionica 1" },
           {
-            time: "16:00 – 18:00",
-            title: "Mala sala 2: Sesija 2 – Intenzivna njega – aktuelne teme",
+            time: "",
+            title:
+              "Gordana Dragošev, predsjednica UINARS, glavna sestra klinike za anesteziju, reanimaciju i intenzivnu njegu UKC Niš",
           },
-          { time: "17:00 – 18:00", title: "Mala sala 1: Radionica 2" },
+
+          {
+            time: "16:00 – 16:45",
+            title: "Sala 2: Radionica – Napredna reanimacija i savremena rješenja za sigurnu intubaciju (Flexicare)",
+          },
+
+          { time: "16:45 – 17:40", title: "Sesija 3 – Sala 2" },
+
+          { time: "16:00 – 17:40", title: "Sesija 4 – Sala 1" },
+
           { time: "20:00", title: "Svečana večera" },
         ];
 
@@ -149,7 +168,8 @@ const AboutContent: React.FC = () => {
           },
         ];
 
-  const currentAgenda = activeDay === "day1" ? day1Agenda : activeDay === "day2" ? day2Agenda : day3Agenda;
+  const currentAgenda =
+    activeDay === "day1" ? day1Agenda : activeDay === "day2" ? day2Agenda : activeDay === "day3" ? day3Agenda : [];
 
   const currentTitle =
     activeDay === "day1"
@@ -160,9 +180,13 @@ const AboutContent: React.FC = () => {
         ? language === "en"
           ? "DAY 2 – SATURDAY, 18 APRIL 2026."
           : "DRUGI DAN – SUBOTA, 18. APRIL 2026."
-        : language === "en"
-          ? "DAY 3 – SUNDAY, 19 APRIL 2026."
-          : "TREĆI DAN – NEDELJA, 19. APRIL 2026.";
+        : activeDay === "day3"
+          ? language === "en"
+            ? "DAY 3 – SUNDAY, 19 APRIL 2026."
+            : "TREĆI DAN – NEDELJA, 19. APRIL 2026."
+          : language === "en"
+            ? "Sessions"
+            : "Sesije";
 
   return (
     <div
@@ -188,34 +212,45 @@ const AboutContent: React.FC = () => {
         <button className={activeDay === "day3" ? "day-btn active" : "day-btn"} onClick={() => setActiveDay("day3")}>
           {language === "en" ? "Day 3" : "Dan 3"}
         </button>
+
+        <button
+          className={activeDay === "rasporedAgenda" ? "day-btn active" : "day-btn"}
+          onClick={() => setActiveDay("rasporedAgenda")}
+        >
+          {language === "en" ? "Sessions" : "Sesije"}
+        </button>
       </div>
 
       <div className="day-label">{currentTitle}</div>
 
-      <div className="timeline">
-        {currentAgenda.map((item, index) => {
-          const isEven = index % 2 === 0;
+      {activeDay === "rasporedAgenda" ? (
+        <RasporedAgenda />
+      ) : (
+        <div className="timeline">
+          {currentAgenda.map((item, index) => {
+            const isEven = index % 2 === 0;
 
-          return (
-            <div className="timeline-row" key={index}>
-              <div className={`timeline-side left ${isEven ? "show" : ""}`}>
-                {isEven && item.time && <span className="time">{item.time}</span>}
-                {!isEven && <span className="title-text">{item.title}</span>}
-              </div>
+            return (
+              <div className="timeline-row" key={index}>
+                <div className={`timeline-side left ${isEven ? "show" : ""}`}>
+                  {isEven && item.time && <span className="time">{item.time}</span>}
+                  {!isEven && <span className="title-text" dangerouslySetInnerHTML={{ __html: item.title }} />}
+                </div>
 
-              <div className="timeline-center">
-                <span className="dot"></span>
-                {index !== currentAgenda.length - 1 && <span className="line"></span>}
-              </div>
+                <div className="timeline-center">
+                  <span className="dot"></span>
+                  {index !== currentAgenda.length - 1 && <span className="line"></span>}
+                </div>
 
-              <div className={`timeline-side right ${!isEven ? "show" : ""}`}>
-                {isEven && <span className="title-text">{item.title}</span>}
-                {!isEven && item.time && <span className="time">{item.time}</span>}
+                <div className={`timeline-side right ${!isEven ? "show" : ""}`}>
+                  {isEven && <span className="title-text" dangerouslySetInnerHTML={{ __html: item.title }} />}
+                  {!isEven && item.time && <span className="time">{item.time}</span>}
+                </div>
               </div>
-            </div>
-          );
-        })}
-      </div>
+            );
+          })}
+        </div>
+      )}
 
       <style jsx>{`
         .timeline-wrapper {
@@ -278,7 +313,7 @@ const AboutContent: React.FC = () => {
           display: grid;
           grid-template-columns: 1fr 70px 1fr;
           align-items: flex-start;
-          min-height: 110px;
+          min-height: 160px;
         }
 
         .timeline-side {
@@ -335,61 +370,61 @@ const AboutContent: React.FC = () => {
           max-width: 100%;
         }
 
-@media (max-width: 768px) {
-  .timeline-row {
-    display: grid;
-    grid-template-columns: 1fr 40px 1fr;
-    align-items: center;
-    min-height: 90px;
-    margin-bottom: 18px;
-  }
+        @media (max-width: 768px) {
+          .timeline-row {
+            display: grid;
+            grid-template-columns: 1fr 40px 1fr;
+            align-items: center;
+            min-height: 90px;
+            margin-bottom: 18px;
+          }
 
-  .timeline-side.left,
-  .timeline-side.right {
-    width: 100%;
-  }
+          .timeline-side.left,
+          .timeline-side.right {
+            width: 100%;
+          }
 
-  .timeline-side.left {
-    text-align: right;
-    padding-right: 12px;
-  }
+          .timeline-side.left {
+            text-align: right;
+            padding-right: 12px;
+          }
 
-  .timeline-side.right {
-    text-align: left;
-    padding-left: 12px;
-  }
+          .timeline-side.right {
+            text-align: left;
+            padding-left: 12px;
+          }
 
-  .timeline-center {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-self: stretch;
-  }
+          .timeline-center {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-self: stretch;
+          }
 
-  .dot {
-    width: 14px;
-    height: 14px;
-  }
+          .dot {
+            width: 14px;
+            height: 14px;
+          }
 
-  .line {
-    width: 3px;
-    flex: 1;
-    margin-top: 6px;
-    background: #d1d5db;
-  }
+          .line {
+            width: 3px;
+            flex: 1;
+            margin-top: 6px;
+            background: #d1d5db;
+          }
 
-  .time {
-    font-size: 15px;
-    line-height: 1.35;
-    word-break: break-word;
-  }
+          .time {
+            font-size: 15px;
+            line-height: 1.35;
+            word-break: break-word;
+          }
 
-  .title-text {
-    font-size: 17px;
-    line-height: 1.4;
-    word-break: break-word;
-  }
-}
+          .title-text {
+            font-size: 17px;
+            line-height: 1.4;
+            word-break: break-word;
+          }
+        }
       `}</style>
     </div>
   );
