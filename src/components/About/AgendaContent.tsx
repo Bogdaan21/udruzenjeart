@@ -42,9 +42,8 @@ const AboutContent: React.FC = () => {
           },
           {
             time: "",
-            title: "Doc. dr. sc. Adriano Friganović, FESNO, FFNMCRSI",
+            title: "Doc. dr. sc. Adriano Friganović, FESNO, FFNMCRSI <br/> predsjednik ESNO",
           },
-          { time: "", title: "Predsjednik ESNO" },
           { time: "20:00 – 24:00", title: "Koktel večera" },
         ];
 

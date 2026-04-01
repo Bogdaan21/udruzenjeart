@@ -234,7 +234,7 @@ const RasporedAgenda = () => {
               },
               {
                 time: "11:00 - 11:30",
-                title: "Radionica: Optimizacija IV terapije uz Nexivu i BD rješenja (Sala 2)",
+                title: "Radionica: Optimizacija IV terapije uz Nexivu i BD rješenja (ala 2)",
               },
             ],
           },
