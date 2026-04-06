@@ -4038,3 +4038,17 @@ input[type="number"] {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
   backdrop-filter: blur(4px);
 }
+
+.sponsor-box {
+  height: 50px;
+  width: 300px; /* opcionalno - daje uniformnost */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-logos {
+  max-height: 70px;
+  max-width: 100%;
+  object-fit: contain;
+}
