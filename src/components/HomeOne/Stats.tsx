@@ -55,19 +55,6 @@ const Stats: React.FC = () => {
                     </Link>
                   </div>
 
-                  {/* MEDICAL SOLUTIONS */}
-                  <div className="sponsor-box">
-                    <Link href="https://medical-solutions.me/" target="_blank" rel="noopener noreferrer">
-                      <Image
-                        src="/images/medical-solutions.png"
-                        alt="Medical Solutions"
-                        width={200}
-                        height={100}
-                        className="img-logos"
-                      />
-                    </Link>
-                  </div>
-
                   {/* FARMALAB */}
                   <div className="sponsor-box">
                     <Link href="https://farmalab.me/" target="_blank" rel="noopener noreferrer">
@@ -87,6 +74,19 @@ const Stats: React.FC = () => {
                   <div className="sponsor-box">
                     <Link href="https://www.farmont.me/" target="_blank" rel="noopener noreferrer">
                       <Image src="/images/farmont.png" alt="Farmont" width={200} height={100} className="img-logos" />
+                    </Link>
+                  </div>
+
+                  {/* MEDICAL SOLUTIONS */}
+                  <div className="sponsor-box">
+                    <Link href="https://medical-solutions.me/" target="_blank" rel="noopener noreferrer">
+                      <Image
+                        src="/images/medical-solutions.png"
+                        alt="Medical Solutions"
+                        width={200}
+                        height={100}
+                        className="img-logos"
+                      />
                     </Link>
                   </div>
 

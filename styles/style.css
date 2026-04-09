@@ -3940,7 +3940,7 @@ input[type="number"] {
   position: relative;
   padding: 25px 15px;
   border-radius: 12px;
-  border: 2px solid #d4af37; /* zlatna */
+  border: 2px solid #d4af37; 
   background: linear-gradient(180deg, rgba(255, 215, 0, 0.08), rgba(255, 215, 0, 0.02));
   box-shadow: 0 6px 20px rgba(212, 175, 55, 0.25);
   transform: scale(1.05);
@@ -3972,7 +3972,7 @@ input[type="number"] {
   position: relative;
   padding: 22px 14px;
   border-radius: 12px;
-  border: 2px solid #c0c0c0;
+  /* border: 2px solid #c0c0c0; */
   background: linear-gradient(180deg, rgba(192, 192, 192, 0.08), rgba(192, 192, 192, 0.02));
   box-shadow: 0 5px 16px rgba(192, 192, 192, 0.25);
   transform: scale(1.02);
@@ -4004,7 +4004,7 @@ input[type="number"] {
   position: relative;
   padding: 20px 14px;
   border-radius: 12px;
-  border: 2px solid #cd7f32;
+  /* border: 2px solid #cd7f32; */
   background: linear-gradient(180deg, rgba(205, 127, 50, 0.08), rgba(205, 127, 50, 0.02));
   box-shadow: 0 4px 14px rgba(205, 127, 50, 0.25);
   transform: scale(1);
