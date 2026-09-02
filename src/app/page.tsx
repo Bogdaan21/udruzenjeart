@@ -3,7 +3,7 @@ import Navbar from "../components/Layouts/Navbar";
 import HeroSlider from "../components/HomeFour/MainBanner";
 import Stats from "../components/HomeOne/Stats";
 import AboutSection from "../components/HomeOne/AboutSection";
-import Services from "../components/HomeOne/Services";
+import Sponsors from "../components/HomeOne/Sponsors";
 import Footer from "../components/Layouts/Footer";
 import type { Metadata } from "next";
 
@@ -57,7 +57,7 @@ export default function Home() {
 
       <AboutSection />
 
-      <Services />
+      <Sponsors />
 
       <Footer />
     </>

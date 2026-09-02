@@ -19,7 +19,7 @@ const ServiceDetailsContent: React.FC = () => {
             <h1>
               {isEnglish
                 ? "The First Congress of the ART Association of Montenegro"
-                : "I Kongres Udruženja ART Crne Gore"}
+                : "Prvi kongres Udruženja ART Crne Gore"}
             </h1>
             <p>
               {isEnglish
@@ -88,7 +88,7 @@ const ServiceDetailsContent: React.FC = () => {
               ) : (
                 <>
                   <p className="story-lead">
-                    I Kongres Udruženja ART Crne Gore okupio je u Baru medicinske sestre, tehničare, predavače i
+                    Prvi kongres Udruženja ART Crne Gore okupio je u Baru medicinske sestre, tehničare, predavače i
                     partnere iz Crne Gore i inostranstva. Tokom tri dana učesnici su razmjenjivali stručna iskustva iz
                     oblasti anestezije, intenzivne njege, transfuzije i savremenog sestrinstva.
                   </p>
@@ -190,7 +190,7 @@ const ServiceDetailsContent: React.FC = () => {
             <p>
               {isEnglish
                 ? "The First Congress confirmed how important it is to create a space where knowledge is shared openly, professional standards grow and healthcare workers build a stronger community together."
-                : "I Kongres je potvrdio koliko je važno stvarati prostor u kojem se znanje dijeli otvoreno, stručni standardi rastu, a zdravstveni radnici zajedno grade snažniju zajednicu."}
+                : "Prvi kongres je potvrdio koliko je važno stvarati prostor u kojem se znanje dijeli otvoreno, stručni standardi rastu, a zdravstveni radnici zajedno grade snažniju zajednicu."}
             </p>
             <strong>{isEnglish ? "ART Association of Montenegro" : "Udruženje ART Crne Gore"}</strong>
           </div>

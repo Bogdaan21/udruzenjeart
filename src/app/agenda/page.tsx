@@ -8,9 +8,9 @@ import Agenda from "@/components/About/AgendaContent";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Agenda i program | I Kongres Udruženja ART Crne Gore",
+  title: "Agenda i program | Prvi kongres Udruženja ART Crne Gore",
   description:
-    "Pogledajte kompletnu agendu i raspored sesija I Kongresa Udruženja ART Crne Gore. Predavanja, radionice, panel diskusije i stručni program iz oblasti anestezije i intenzivne njege.",
+    "Pogledajte kompletnu agendu i raspored sesija Prvog kongresa Udruženja ART Crne Gore. Predavanja, radionice, panel diskusije i stručni program iz oblasti anestezije i intenzivne njege.",
 
   keywords: [
     "agenda kongres ART",
@@ -30,9 +30,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://udruzenjeart.me/congress/agenda",
-    title: "Agenda i program | I Kongres Udruženja ART Crne Gore",
+    title: "Agenda i program | Prvi kongres Udruženja ART Crne Gore",
     description:
-      "Detaljan raspored sesija, radionica i predavanja na I Kongresu Udruženja ART Crne Gore. Pratite najnovije teme iz anestezije i intenzivne medicine.",
+      "Detaljan raspored sesija, radionica i predavanja na Prvom kongresu Udruženja ART Crne Gore. Pratite najnovije teme iz anestezije i intenzivne medicine.",
     siteName: "Udruženje ART Crne Gore",
     images: [
       {
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Agenda i program | I Kongres Udruženja ART Crne Gore",
+    title: "Agenda i program | Prvi kongres Udruženja ART Crne Gore",
     description:
       "Kompletan raspored kongresa – sesije, radionice i predavanja iz oblasti anestezije i intenzivne njege.",
     images: ["/images/congress-agenda.jpg"],

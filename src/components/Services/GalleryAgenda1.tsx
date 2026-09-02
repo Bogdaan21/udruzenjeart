@@ -88,7 +88,7 @@ const GalleryAgenda1: React.FC = () => {
                 alt={
                   isEnglish
                     ? `The First Congress of the ART Association, photograph ${index + 1}`
-                    : `I Kongres Udruženja ART, fotografija ${index + 1}`
+                    : `Prvi kongres Udruženja ART, fotografija ${index + 1}`
                 }
                 width={600}
                 height={450}
@@ -157,7 +157,7 @@ const GalleryAgenda1: React.FC = () => {
               alt={
                 isEnglish
                   ? `The First Congress of the ART Association, photograph ${activeIndex + 1}`
-                  : `I Kongres Udruženja ART, fotografija ${activeIndex + 1}`
+                  : `Prvi kongres Udruženja ART, fotografija ${activeIndex + 1}`
               }
               width={1600}
               height={1067}

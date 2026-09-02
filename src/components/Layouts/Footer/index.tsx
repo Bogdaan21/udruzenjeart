@@ -81,6 +81,7 @@ const Footer: React.FC = () => {
                       <a
                         href="https://www.facebook.com/people/Udruzenje-anesteti%C4%8Daratehni%C4%8Dara-intenzivne-njege-i-transfuzije-Crne-Gore/61574532365801/?rdid=sNcR4PikCshjW2WM&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F16rosXR6xN%2F"
                         target="_blank"
+                        rel="noopener noreferrer"
                       >
                         <i className="icofont-facebook"></i> Facebook
                       </a>
@@ -89,8 +90,18 @@ const Footer: React.FC = () => {
                       <a
                         href="https://www.instagram.com/udruzenjeart/?igsh=MWVmajQ3ZHBlcGlsOQ%3D%3D&utm_source=qr#"
                         target="_blank"
+                        rel="noopener noreferrer"
                       >
                         <i className="icofont-instagram"></i> Instagram
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.youtube.com/@DuskoStijepovic"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <i className="icofont-youtube-play"></i> YouTube
                       </a>
                     </li>
                     {/* <li>
