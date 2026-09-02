@@ -61,15 +61,39 @@ const Navbar: React.FC = () => {
                     <MenuItem key={menuItem.label} {...menuItem} />
                   ))}
                 </ul>
+                <div className="mobile-language-selector d-md-none">
+                  <LanguageSelector />
+                </div>
               </div>
 
-              <div className="hide-mobile">
+              <div className="desktop-language-selector d-none d-md-block">
                 <LanguageSelector />
               </div>
             </nav>
           </div>
         </div>
       </div>
+
+      <style jsx>{`
+        .mobile-language-selector {
+          display: flex;
+          justify-content: center;
+          padding: 14px 15px 18px;
+          border-top: 1px solid #eef1f4;
+        }
+
+        .mobile-language-selector :global(.language-dropdown) {
+
+          justify-content: center;
+        }
+
+        .mobile-language-selector :global(.language-dropdown .dropdown-menu) {
+          right: auto !important;
+          left: 50%;
+          transform: translateX(-50%);
+          z-index: 1100;
+        }
+      `}</style>
     </>
   );
 };

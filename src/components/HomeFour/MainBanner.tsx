@@ -31,40 +31,22 @@ const MainBanner: React.FC = () => {
               <div className="row align-items-center">
                 <div className="col-lg-8 col-md-12">
                   <div className="slider-text pe-lg-4">
-                    {language === "en" ? (
-                      <>
-                        <h2>Together We Build a Stronger and More Compassionate Healthcare Community</h2>
-                        <p>
-                          The ART Association brings together nurses and technicians in the fields of anesthesia,
-                          intensive care, and transfusion. Our mission is to improve knowledge, skills, and mutual
-                          support through education, professional events, and collaboration with national and
-                          international institutions.
-                        </p>
-                        <div className="common-btn">
-                          <Link href="/congress" className="cmn-btn-right">
-                            Congress
-                          </Link>
-                        </div>
-                      </>
-                    ) : (
-                      <>
-                        <h1>
-                          Udruženje ART Crne Gore
-                          <br />
-                        </h1>
-                        <h2>Zajedno gradimo snažniju i humaniju zdravstvenu zajednicu</h2>
-                        <p>
-                          Udruženje ART okuplja medicinske sestre i tehničare iz oblasti anestezije, intenzivne njege i
-                          transfuzije. Naša misija je unapređenje znanja, vještina i međusobne podrške kroz edukacije,
-                          stručne skupove i saradnju sa domaćim i međunarodnim institucijama.
-                        </p>
-                        <div className="common-btn">
-                          <Link href="/congress" className="cmn-btn-right">
-                            Kongres
-                          </Link>
-                        </div>
-                      </>
-                    )}
+                    <h1>{language === "en" ? "ART Association of Montenegro" : "Udruženje ART Crne Gore"}</h1>
+                    <h2>
+                      {language === "en"
+                        ? "Together We Build a Stronger and More Compassionate Healthcare Community"
+                        : "Zajedno gradimo snažniju i humaniju zdravstvenu zajednicu"}
+                    </h2>
+                    <p>
+                      {language === "en"
+                        ? "The ART Association brings together nurses and technicians in the fields of anesthesia, intensive care, and transfusion. Our mission is to improve knowledge, skills, and mutual support through education, professional events, and collaboration with national and international institutions."
+                        : "Udruženje ART okuplja medicinske sestre i tehničare iz oblasti anestezije, intenzivne njege i transfuzije. Naša misija je unapređenje znanja, vještina i međusobne podrške kroz edukacije, stručne skupove i saradnju sa domaćim i međunarodnim institucijama."}
+                    </p>
+                    <div className="common-btn">
+                      <Link href="/congress" className="cmn-btn-right">
+                        {language === "en" ? "Congress" : "Kongres"}
+                      </Link>
+                    </div>
                   </div>
                 </div>
                 <div className="col-lg-4 col-md-12 text-center mt-4 mt-lg-0">
@@ -121,23 +103,19 @@ const MainBanner: React.FC = () => {
         }
 
         .slider-text h1 {
-          font-size: 42px;
-          line-height: 1.3;
+          font-size: 45px;
+          line-height: 1.2;
           font-weight: 700;
-          margin-bottom: 20px;
+          margin-bottom: 14px;
+          color: #fff;
         }
 
         .slider-text h2 {
-          font-size: 42px;
-          line-height: 1.3;
-          font-weight: 700;
+          font-size: 32px;
+          line-height: 1.35;
+          font-weight: 600;
           color: rgba(255, 255, 255, 0.9);
-        }
-
-        @media (max-width: 768px) {
-        .slider-text h2 {
-          font-size: 30px;
-          }
+          margin-bottom: 18px;
         }
 
         .slider-text p {
@@ -188,16 +166,24 @@ const MainBanner: React.FC = () => {
         @media (max-width: 991px) {
           .slider-text {
             text-align: center;
-            margin-bottom: 40px;
-            font-size: 8px;
+            margin-bottom: 32px;
           }
 
           .slider-text h1 {
-            font-size: 28px;
+            margin-bottom: 10px;
+            font-size: 34px;
+            line-height: 1.2;
+          }
+
+          .slider-text h2 {
+            margin-bottom: 15px;
+            font-size: 25px;
+            line-height: 1.35;
           }
 
           .slider-text p {
             font-size: 16px;
+            line-height: 1.65;
           }
 
           .hero-professional-partners {
@@ -217,6 +203,26 @@ const MainBanner: React.FC = () => {
         }
 
         @media (max-width: 575px) {
+          .slider-text h1 {
+            font-size: 28px;
+          }
+
+          .slider-text h2 {
+            font-size: 21px;
+            line-height: 1.4;
+          }
+
+          .slider-text p {
+            margin-bottom: 20px;
+            font-size: 15px;
+          }
+
+          .common-btn :global(a) {
+            padding: 11px 20px;
+            font-size: 14px;
+            line-height: 1.4;
+          }
+
           .hero-professional-partners {
             gap: 20px 28px;
           }

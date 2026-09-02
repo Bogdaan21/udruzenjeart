@@ -24,13 +24,13 @@ export default function Page() {
       <TopHeader />
       <Navbar />
 
-      <PageBanner
+      {/* <PageBanner
         pageTitle={content.pageTitle}
         homePageUrl="/"
         homePageText={content.homePageText}
         activePageText={content.activePageText}
         bgImage="/images/home-one/home-slider-bg.jpg"
-      />
+      /> */}
 
       <AboutContent />
       <OurExpertise />
