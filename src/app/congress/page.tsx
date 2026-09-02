@@ -1,19 +1,19 @@
 import React from "react";
 import TopHeader from "../../components/Layouts/TopHeader";
 import Navbar from "../../components/Layouts/Navbar";
-import PageBanner from "../../components/Common/PageBanner";
 import ServiceDetailsContent from "@/components/Services/ServiceDetailsContent";
 import Footer from "../../components/Layouts/Footer";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Hotel Princess Bar | Udruženje ART Crne Gore",
+  title: "I Kongres Udruženja ART Crne Gore",
   description:
-    "Hotel Princess Bar — zvanični hotel I Kongresa Udruženja ART Crne Gore. Otkrijte udoban smještaj, savršenu lokaciju i vrhunsku uslugu za učesnike kongresa u Baru.",
+    "Detaljan osvrt na I Kongres Udruženja ART Crne Gore sa međunarodnim učešćem, održan u Baru od 17. do 19. aprila 2026. godine.",
   keywords: [
-    "Hotel Princess Bar",
+    "I Kongres Udruženja ART",
     "kongres ART Crna Gora",
-    "smještaj Bar",
+    "kongres sa međunarodnim učešćem",
+    "Hotel Princess Bar",
     "Udruženje ART",
     "anestezičari Crna Gora",
     "intenzivna njega",
@@ -24,26 +24,26 @@ export const metadata: Metadata = {
     canonical: "https://udruzenjeart.me/congress",
   },
   openGraph: {
-    type: "website",
+    type: "article",
     url: "https://udruzenjeart.me/congress",
-    title: "Hotel Princess Bar | Udruženje ART Crne Gore",
+    title: "I Kongres Udruženja ART Crne Gore",
     description:
-      "Zvanični hotel I Kongresa Udruženja ART Crne Gore. Hotel Princess Bar pruža idealan spoj luksuza, udobnosti i predivnog pogleda na Jadransko more.",
+      "Stručna predavanja, praktične radionice, međunarodna saradnja i najvažniji trenuci I Kongresa Udruženja ART u Baru.",
     siteName: "Udruženje ART Crne Gore",
     images: [
       {
-        url: "/images/princess-bar2.jpg",
+        url: "/images/congress-april-bar/1.jpg",
         width: 1200,
         height: 630,
-        alt: "Hotel Princess Bar - zvanični hotel kongresa Udruženja ART",
+        alt: "Učesnici I Kongresa Udruženja ART Crne Gore",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Hotel Princess Bar | Udruženje ART Crne Gore",
-    description: "Saznajte više o Hotelu Princess Bar — zvaničnom hotelu I Kongresa Udruženja ART Crne Gore.",
-    images: ["/images/princess-bar2.jpg"],
+    title: "I Kongres Udruženja ART Crne Gore",
+    description: "Detaljan osvrt i galerija fotografija sa I Kongresa Udruženja ART Crne Gore u Baru.",
+    images: ["/images/congress-april-bar/1.jpg"],
   },
 };
 
@@ -53,14 +53,6 @@ export default function Page() {
       <TopHeader />
 
       <Navbar />
-
-      <PageBanner
-        pageTitle="Hotel Princess Bar"
-        homePageUrl="/"
-        homePageText="Home"
-        activePageText="Congress"
-        bgImage="/images/princess-bar2.jpg"
-      />
 
       <ServiceDetailsContent />
 
