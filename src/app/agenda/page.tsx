@@ -1,8 +1,6 @@
 import React from "react";
 import TopHeader from "../../components/Layouts/TopHeader";
 import Navbar from "../../components/Layouts/Navbar";
-import PageBanner from "../../components/Common/PageBanner";
-import ServiceDetailsContent from "@/components/Services/ServiceDetailsContent";
 import Footer from "../../components/Layouts/Footer";
 import Agenda from "@/components/About/AgendaContent";
 import type { Metadata } from "next";
@@ -11,7 +9,6 @@ export const metadata: Metadata = {
   title: "Agenda i program | Prvi kongres Udruženja ART Crne Gore",
   description:
     "Pogledajte kompletnu agendu i raspored sesija Prvog kongresa Udruženja ART Crne Gore. Predavanja, radionice, panel diskusije i stručni program iz oblasti anestezije i intenzivne njege.",
-
   keywords: [
     "agenda kongres ART",
     "program kongresa Crna Gora",
@@ -22,17 +19,15 @@ export const metadata: Metadata = {
     "radionice anestezija",
     "panel diskusija zdravstvo",
   ],
-
   alternates: {
-    canonical: "https://udruzenjeart.me/congress/agenda",
+    canonical: "https://udruzenjeart.me/agenda",
   },
-
   openGraph: {
     type: "website",
-    url: "https://udruzenjeart.me/congress/agenda",
+    url: "https://udruzenjeart.me/agenda",
     title: "Agenda i program | Prvi kongres Udruženja ART Crne Gore",
     description:
-      "Detaljan raspored sesija, radionica i predavanja na Prvom kongresu Udruženja ART Crne Gore. Pratite najnovije teme iz anestezije i intenzivne medicine.",
+      "Detaljan raspored sesija, radionica i predavanja na Prvom kongresu Udruženja ART Crne Gore.",
     siteName: "Udruženje ART Crne Gore",
     images: [
       {
@@ -43,12 +38,10 @@ export const metadata: Metadata = {
       },
     ],
   },
-
   twitter: {
     card: "summary_large_image",
     title: "Agenda i program | Prvi kongres Udruženja ART Crne Gore",
-    description:
-      "Kompletan raspored kongresa – sesije, radionice i predavanja iz oblasti anestezije i intenzivne njege.",
+    description: "Kompletan raspored kongresa – sesije, radionice i predavanja.",
     images: ["/images/congress-agenda.jpg"],
   },
 };
@@ -57,11 +50,8 @@ export default function Page() {
   return (
     <>
       <TopHeader />
-
       <Navbar />
-
       <Agenda />
-
       <Footer />
     </>
   );

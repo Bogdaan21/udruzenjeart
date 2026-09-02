@@ -27,11 +27,6 @@ const bronzeSponsors: Partner[] = [
   { name: "Salus", image: "/images/salus.png", href: "https://healthismadeathome.salus.global" },
 ];
 
-const professionalPartners: Partner[] = [
-  { name: "ESNO", image: "/images/esn.png", href: "https://esno.org/" },
-  { name: "IFNA", image: "/images/ifna.png", href: "https://ifna.site/" },
-];
-
 const Sponsors: React.FC = () => {
   const { language } = useLanguage();
   const isEnglish = language === "en";
@@ -40,11 +35,6 @@ const Sponsors: React.FC = () => {
     { title: isEnglish ? "Gold sponsors" : "Zlatni sponzori", tone: "gold", partners: goldSponsors },
     { title: isEnglish ? "Silver sponsors" : "Srebrni sponzori", tone: "silver", partners: silverSponsors },
     { title: isEnglish ? "Bronze sponsors" : "Bronzani sponzori", tone: "bronze", partners: bronzeSponsors },
-    {
-      title: isEnglish ? "Professional partners" : "Stručni partneri",
-      tone: "partner",
-      partners: professionalPartners,
-    },
   ];
 
   const renderLogo = (partner: Partner) => (
@@ -104,37 +94,37 @@ const Sponsors: React.FC = () => {
 
       <style jsx>{`
         .partners-area {
-          padding: 92px 0 96px;
+          padding: 64px 0 72px;
           background: #f5f8fc;
         }
 
         .partners-heading {
-          max-width: 760px;
-          margin: 0 auto 52px;
+          max-width: 680px;
+          margin: 0 auto 34px;
           text-align: center;
         }
 
         .partners-heading > span {
           display: inline-block;
-          margin-bottom: 12px;
+          margin-bottom: 8px;
           color: #0046c0;
-          font-size: 13px;
+          font-size: 12px;
           font-weight: 700;
           letter-spacing: 0.11em;
           text-transform: uppercase;
         }
 
         .partners-heading h2 {
-          margin-bottom: 15px;
-          font-size: 38px;
+          margin-bottom: 10px;
+          font-size: 32px;
           font-weight: 700;
         }
 
         .partners-heading p {
           margin: 0;
           color: #5a7080;
-          font-size: 16px;
-          line-height: 1.75;
+          font-size: 15px;
+          line-height: 1.6;
         }
 
         .partner-groups {
@@ -247,15 +237,15 @@ const Sponsors: React.FC = () => {
 
         @media (max-width: 575px) {
           .partners-area {
-            padding: 65px 0 70px;
+            padding: 50px 0 56px;
           }
 
           .partners-heading {
-            margin-bottom: 36px;
+            margin-bottom: 28px;
           }
 
           .partners-heading h2 {
-            font-size: 29px;
+            font-size: 27px;
           }
 
           .partner-group {

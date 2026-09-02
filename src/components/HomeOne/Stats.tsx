@@ -76,7 +76,7 @@ const Stats: React.FC = () => {
       <style jsx>{`
         .association-facts {
           overflow: hidden;
-          padding: 28px;
+          padding: 18px;
           background-image: url(/images/map-bg.png);
           background-position: center;
           background-size: cover;
@@ -92,11 +92,11 @@ const Stats: React.FC = () => {
           flex-direction: column;
           align-items: center;
           justify-content: flex-start;
-          min-height: 295px;
+          min-height: 225px;
           height: 100%;
-          padding: 34px 22px 30px;
+          padding: 22px 18px 20px;
           text-align: center;
-          background: rgba(255, 255, 255, 0.94);
+          background: transparent;
         }
 
         .fact-icon {
@@ -104,29 +104,30 @@ const Stats: React.FC = () => {
           flex: 0 0 auto;
           align-items: center;
           justify-content: center;
-          width: 76px;
-          height: 76px;
-          margin-bottom: 24px;
-          color: #4a90e2;
+          width: 58px;
+          height: 58px;
+          margin-bottom: 14px;
+          color: #0052c9;
         }
 
         .fact-icon i {
-          font-size: 64px;
+          font-size: 50px;
         }
 
         .association-fact h3 {
-          margin-bottom: 18px;
-          color: #232323;
-          font-size: 21px;
-          font-weight: 700;
+          margin-bottom: 10px;
+          color: #0052c9;
+          font-size: 20px;
+          font-weight: 800;
           line-height: 1.3;
         }
 
         .association-fact p {
           margin: 0;
           color: #344c5d;
-          font-size: 15px;
-          line-height: 1.75;
+          font-size: 14px;
+          font-weight: 600;
+          line-height: 1.55;
         }
 
         @media (min-width: 992px) {
@@ -141,11 +142,11 @@ const Stats: React.FC = () => {
 
         @media (max-width: 991px) {
           .association-facts {
-            padding: 24px;
+            padding: 16px;
           }
 
           .association-fact {
-            min-height: 275px;
+            min-height: 220px;
             border-right: 1px solid #e6e9ed;
             border-bottom: 1px solid #e6e9ed;
           }
@@ -161,12 +162,12 @@ const Stats: React.FC = () => {
 
         @media (max-width: 575px) {
           .association-facts {
-            padding: 18px;
+            padding: 14px;
           }
 
           .association-fact {
-            min-height: 260px;
-            padding: 30px 22px 28px;
+            min-height: 210px;
+            padding: 22px 18px 20px;
             border-right: 0;
             border-bottom: 1px solid #e6e9ed;
           }
@@ -180,11 +181,11 @@ const Stats: React.FC = () => {
           }
 
           .fact-icon {
-            margin-bottom: 18px;
+            margin-bottom: 12px;
           }
 
           .fact-icon i {
-            font-size: 56px;
+            font-size: 46px;
           }
 
           .association-fact h3 {

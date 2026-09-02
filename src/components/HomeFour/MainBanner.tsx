@@ -4,7 +4,6 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useLanguage } from "@/context/LanguageContext";
-import CountdownSection from "../CountdownSection/CountdownSection";
 
 const MainBanner: React.FC = () => {
   const { language } = useLanguage();
@@ -45,9 +44,6 @@ const MainBanner: React.FC = () => {
                           <Link href="/congress" className="cmn-btn-right">
                             Congress
                           </Link>
-                          <Link href="/agenda" className="cmn-btn-left">
-                            Agenda
-                          </Link>
                         </div>
                       </>
                     ) : (
@@ -66,16 +62,45 @@ const MainBanner: React.FC = () => {
                           <Link href="/congress" className="cmn-btn-right">
                             Kongres
                           </Link>
-                          <Link href="/agenda" className="cmn-btn-left">
-                            Agenda
-                          </Link>
                         </div>
                       </>
                     )}
                   </div>
                 </div>
                 <div className="col-lg-4 col-md-12 text-center mt-4 mt-lg-0">
-                  <CountdownSection />
+                  <div
+                    className="hero-professional-partners"
+                    aria-label={language === "en" ? "Professional partners" : "Stručni partneri"}
+                  >
+                    <Link
+                      href="https://esno.org/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="ESNO — European Specialist Nurses Organisation"
+                    >
+                      <Image
+                        src="/images/esn.png"
+                        alt="ESNO"
+                        width={250}
+                        height={154}
+                        className="hero-partner-logo hero-partner-logo-esno"
+                      />
+                    </Link>
+                    <Link
+                      href="https://ifna.site/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="IFNA — International Federation of Nurse Anesthetists"
+                    >
+                      <Image
+                        src="/images/ifna.png"
+                        alt="IFNA"
+                        width={190}
+                        height={126}
+                        className="hero-partner-logo hero-partner-logo-ifna"
+                      />
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
@@ -121,6 +146,45 @@ const MainBanner: React.FC = () => {
           margin-bottom: 25px;
         }
 
+        .hero-professional-partners {
+          position: relative;
+          z-index: 5;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 28px;
+          margin-top: -160px;
+        }
+
+        .hero-professional-partners :global(a) {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          transition: transform 0.25s ease, opacity 0.25s ease;
+        }
+
+        .hero-professional-partners :global(a:hover) {
+          transform: translateY(-3px);
+          opacity: 0.9;
+        }
+
+        .hero-professional-partners :global(.hero-partner-logo) {
+          display: block;
+          width: auto;
+          height: auto;
+          object-fit: contain;
+          filter: brightness(0) invert(1) drop-shadow(0 5px 14px rgba(0, 0, 0, 0.28));
+        }
+
+        .hero-professional-partners :global(.hero-partner-logo-esno) {
+          max-width: 250px;
+        }
+
+        .hero-professional-partners :global(.hero-partner-logo-ifna) {
+          max-width: 175px;
+        }
+
         @media (max-width: 991px) {
           .slider-text {
             text-align: center;
@@ -134,6 +198,35 @@ const MainBanner: React.FC = () => {
 
           .slider-text p {
             font-size: 16px;
+          }
+
+          .hero-professional-partners {
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 24px 36px;
+            margin-top: 0;
+          }
+
+          .hero-professional-partners :global(.hero-partner-logo-esno) {
+            max-width: 205px;
+          }
+
+          .hero-professional-partners :global(.hero-partner-logo-ifna) {
+            max-width: 145px;
+          }
+        }
+
+        @media (max-width: 575px) {
+          .hero-professional-partners {
+            gap: 20px 28px;
+          }
+
+          .hero-professional-partners :global(.hero-partner-logo-esno) {
+            max-width: 170px;
+          }
+
+          .hero-professional-partners :global(.hero-partner-logo-ifna) {
+            max-width: 120px;
           }
         }
       `}</style>

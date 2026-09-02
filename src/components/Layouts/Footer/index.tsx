@@ -2,7 +2,6 @@
 
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { useLanguage } from "@/context/LanguageContext";
 import QRCodeComponent from "@/components/QR/QRCodeComponent";
 
@@ -15,7 +14,7 @@ const Footer: React.FC = () => {
     <>
       <footer className="pt-100 pb-70" style={{ backgroundImage: `url(/images/footer-bg.png)` }}>
         <div className="container">
-          <div className="row">
+          <div className="row justify-content-between">
             {/* ✅ Kontakt sekcija */}
             <div className="col-sm-6 col-lg-4">
               <div className="footer-item">
@@ -117,46 +116,6 @@ const Footer: React.FC = () => {
               </div>
             </div>
 
-            {/* ✅ Partner sekcija */}
-            <div className="col-sm-6 col-lg-3">
-              <div className="footer-item text-center footer-logos-bg">
-                <div className="">
-                  <div className="counter-item">
-                    <Link href="https://ifna.site/" target="_blank" rel="noopener noreferrer">
-                      <Image
-                        src="/images/esn.png"
-                        alt="European specialist nurses organisation"
-                        width={180}
-                        height={80}
-                        className="img-fluid img-logos"
-                        style={{
-                          objectFit: "contain",
-                          filter: "drop-shadow(0 2px 6px rgba(0,0,0,0.1))",
-                        }}
-                      />
-                    </Link>
-                  </div>
-                </div>
-
-                <div className="">
-                  <div className="counter-item">
-                    <Link href="https://esno.org/" target="_blank" rel="noopener noreferrer">
-                      <Image
-                        src="/images/ifna.png"
-                        alt="European specialist nurses organisation"
-                        width={180}
-                        height={80}
-                        className="img-fluid img-logos"
-                        style={{
-                          objectFit: "contain",
-                          filter: "drop-shadow(0 2px 6px rgba(0,0,0,0.1))",
-                        }}
-                      />{" "}
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </footer>
